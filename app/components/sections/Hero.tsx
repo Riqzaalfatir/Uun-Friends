@@ -22,7 +22,7 @@ const Hero = () => {
             <div className="w-full flex justify-center">
                 <div className="w-full max-w-[1440px] px-4 pt-10 md:pt-36 lg:pt-0">
 
-                    <div className="relative w-full aspect-[1440/850] ">
+                    <div className="relative w-full aspect-[1440/850]">
 
                         {/* TEXT BESAR */}
                         <Image
@@ -147,7 +147,7 @@ const Hero = () => {
                         {/* TEXT BAWAH */}
                         <p className="
                            absolute 
-                           top-[240%] sm:top-[350px] md:top-[200%] lg:top-[84.1%]
+                           top-[270%] sm:top-[990px] md:top-[200%] lg:top-[84.1%]
                            left-1/2 -translate-x-1/2
                            text-[#F4ECA3]
                            text-[35px] md:text-[55px] lg:text-[40px]
