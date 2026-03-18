@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero = () => {
     return (
-        <section className="relative w-full h-screen md:min-h-screen bg-[#EB621F] overflow-hidden">
+        <section className="relative w-full min-h-screen bg-[#EB621F] overflow-hidden">
 
             {/* ✅ GARIS */}
             <div className="absolute top-[68px] left-0 w-full flex flex-col gap-[38px] md:gap-[44px] lg:gap-[54px] pointer-events-none">
@@ -20,7 +20,7 @@ const Hero = () => {
 
             {/* ✅ WRAPPER CENTER */}
             <div className="w-full flex justify-center">
-                <div className="w-full max-w-[1440px] px-4 pt-10">
+                <div className="w-full max-w-[1440px] px-4 pt-10 md:pt-0">
 
                     <div className="relative w-full aspect-[1440/850] ">
 
@@ -73,7 +73,7 @@ const Hero = () => {
                             alt="zigzag"
                             width={150}
                             height={142}
-                            className="absolute top-[110%] md:top-[47%] lg:top-[44.7%] left-[78%] md:right-[18%] lg:right-[24.8%] scale-[0.7] md:scale-[0.9] lg:scale-100"
+                            className="absolute top-[112%] md:top-[47%] lg:top-[44.7%] left-[79%] lg:left-[64.5%] scale-[0.7] md:scale-[0.9] lg:scale-100"
                         />
 
                         {/* GEROBak */}
@@ -98,7 +98,7 @@ const Hero = () => {
                             height={342}
                             className="
                                absolute 
-                               top-[114%] md:top-[52%] lg:top-[48.5%]
+                               top-[114%] md:top-[52%] lg:top-[48%]
                                left-[55%] md:right-[10%] lg:right-[15.5%]
                                scale-[0.8] md:scale-[0.9] lg:scale-100
                             "
@@ -151,7 +151,7 @@ const Hero = () => {
                            left-1/2 -translate-x-1/2
                            text-[#F4ECA3]
                            text-[35px] md:text-[28px] lg:text-[40px]
-                           font-barlow font-bold text-center scale-[0.9] whitespace-nowrap
+                           font-barlow font-bold text-center scale-[0.9] md:scale-100 whitespace-nowrap
                         ">
                             JAJAN - MAIN - MAKAN
                         </p>
