@@ -15,7 +15,10 @@ export default function OpeningScreen({ onOpen }: Props) {
             animate={{ y: 0 }}
             exit={{ y: "-100%" }}
             transition={{ duration: 0.8, ease: "easeInOut" }}
-            className="fixed inset-0 z-[9999] bg-[#EB621F] flex items-center justify-center overflow-hidden"
+            className=" fixed inset-0 z-[9999] 
+  bg-black/50 lg:bg-[#EB621F]   // overlay hitam di HP
+  flex items-center justify-center 
+  overflow-hidden"
         >
             {/* GARIS ATAS */}
             <div className="absolute top-[68px] md:top-[110px] lg:top-[68px] left-0 w-full flex flex-col gap-[38px] md:gap-[54px]  pointer-events-none">
@@ -31,7 +34,7 @@ export default function OpeningScreen({ onOpen }: Props) {
             </div>
 
             {/* CONTENT */}
-            <div className="relative w-full bg-black h-[600px] lg:h-auto max-w-[380px] lg:max-w-[500px] aspect-[4/5] flex flex-col items-center justify-center text-center">
+            <div className="hidden lg:flex relative w-full max-w-[500px] aspect-[4/5] flex-col items-center justify-center text-center">
 
                 {/* TEXT */}
                 <Image
@@ -184,6 +187,40 @@ export default function OpeningScreen({ onOpen }: Props) {
                     Buka Undangan
                 </motion.button>
             </div>
+
+            <div className="flex lg:hidden items-center justify-center w-full h-full px-4">
+
+                <div className="relative w-full max-w-[380px]
+  h-[550px] aspect-[4/5] bg-[#EB621F] rounded-xl  shadow-2xl overflow-hidden flex items-center justify-center">
+
+                    <Image
+                        src="/image/hero/JAJAN.png"
+                        alt="jajan"
+                        width={260}
+                        height={200}
+                        className="absolute top-[10%] left-1/2 -translate-x-1/2"
+                    />
+
+                    <Image
+                        src="/image/hero/BARENG.png"
+                        alt="bareng"
+                        width={300}
+                        height={200}
+                        className="absolute top-[35%] left-1/2 -translate-x-1/2"
+                    />
+
+                    <motion.button
+                        onClick={onOpen}
+                        className="absolute bottom-[8%] w-[80%] py-3 bg-[#F4ECA3] text-[#EB621F] rounded-xl font-bold"
+                    >
+                        Buka Undangan
+                    </motion.button>
+
+                </div>
+
+            </div>
+
+
         </motion.div>
     );
 }
