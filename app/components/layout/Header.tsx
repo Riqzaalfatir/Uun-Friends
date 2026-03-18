@@ -15,7 +15,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="absolute top-0 left-0 w-full z-50">
+    <header className="absolute top-0 left-0 w-full z-50 ">
       
       {/* NAVBAR */}
       <nav className="flex justify-center items-center px-6 py-5 relative">
