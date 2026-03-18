@@ -3,7 +3,7 @@ import React from "react";
 
 const Video = () => {
   return (
-    <section className="relative bg-[#EB621F] w-full min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative bg-[#EB621F] w-full px-6 py-10 flex items-center justify-center overflow-hidden">
       
       {/* GARIS BACKGROUND */}
       <div className="absolute top-[128px] left-0 w-full flex flex-col gap-[40px] pointer-events-none">

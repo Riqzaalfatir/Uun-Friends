@@ -1,108 +1,145 @@
-import React from "react";
+"use client"
+
+import React, { useState } from "react";
 
 const Wishes = () => {
-  return (
-    <section className="pt-20 pb-10 bg-[#EB621F] w-full">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-start">
+    const [name, setName] = useState("");
+    const [message, setMessage] = useState("");
+    const [showNotif, setShowNotif] = useState(false)
 
-          {/* KIRI */}
-          <div className="flex flex-col gap-6">
-            <h2 className="text-[#F4ECA3] font-barlow font-bold text-[40px] md:text-[70px] lg:text-[90px] leading-[100%] uppercase">
-              DOA DAN <br />
-              HARAPAN UNTUK <br />
-              KITA SEMUA
-            </h2>
+    const handleSubmit = () => {
+        if (!name || !message) return;
 
-            {/* INPUT */}
-            <input
-              type="text"
-              placeholder="John Doe"
-              className="bg-[#F8F8F6] rounded-xl px-4 py-3 placeholder:text-[14px] placeholder:text-black outline-none placeholder:font-source"
-            />
+        setShowNotif(true);
 
-            <textarea
-              placeholder="Write your message here"
-              rows={6}
-              className="bg-[#F8F8F6] rounded-xl px-4 py-3 placeholder:text-[14px] placeholder:text-slate-400 placeholder:font-source  outline-none resize-none"
-            />
+        setName("")
+        setMessage("")
 
-            {/* BUTTON */}
-            <button className="bg-[#F4ECA3] text-[#EB621F] text-[16px] py-3 rounded-xl font-bold font-barlow">
-              KIRIM PESAN BIAR SEMUA BISA BACA
-            </button>
-          </div>
+        setTimeout(() => {
+            setShowNotif(false);
+        }, 3000)
+    }
 
-          {/* KANAN */}
-          <div className="flex flex-col justify-between h-full">
+    return (
+        <section className="pt-20 pb-10 bg-[#EB621F] w-full">
+            <div className="max-w-7xl mx-auto px-4">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
 
-            {/* LIST PESAN */}
-            <div className="flex flex-col gap-4  overflow-y-auto pr-2">
+                    {/* KIRI */}
+                    <div className="flex flex-col gap-6">
+                        <h2 className="text-[#F4ECA3] font-barlow font-bold text-[40px] md:text-[70px] lg:text-[90px] leading-[100%] uppercase">
+                            DOA DAN <span className="lg:block">HARAPAN UNTUK </span>
+                            <span className="md:block">KITA SEMUA</span>
+                        </h2>
 
-              {/* ITEM */}
-              <div className="px-4">
-                <h4 className="text-[#F4ECA3] text-[20px] font-bold font-barlow">John Doe</h4>
-                <p className="text-[#F8F8F6] text-[16px] font-source">
-                  Congrats Andre & Stephanie! happily ever after. God bless!
-                </p>
-              </div>
-              
-              <hr className="border-0 h-[1.5px] bg-white/20 mb-2" />
+                        {/* INPUT */}
+                        <input
+                            type="text"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                            placeholder="John Doe"
+                            className="bg-[#F8F8F6] rounded-xl px-4 py-3 placeholder:text-[14px] placeholder:text-slate-400 outline-none placeholder:font-source font-source text-sm"
+                        />
 
-              <div className="px-4">
-                <h4 className="text-[#F4ECA3] text-[20px] font-bold font-barlow">Christian Ebbyanto</h4>
-                <p className="text-[#F8F8F6] text-[16px] font-source">
-                  Happy wedding day boskuu! Happily ever after. Tuhan berkati selalu keluarga barunya
-                </p>
-              </div>
-              
-              <hr className="border-0 h-[1.5px] bg-white/20 mb-2" />
+                        <textarea
+                            placeholder="Write your message here"
+                            rows={8}
+                            value={message}
+                            onChange={(e) => setMessage(e.target.value)}
+                            className="bg-[#F8F8F6] rounded-xl px-4 py-3 placeholder:text-[14px] placeholder:text-slate-400 placeholder:font-source  outline-none resize-none font-source text-sm"
+                        />
 
-              <div className="px-4">
-                <h4 className="text-[#F4ECA3] text-[20px] font-bold font-barlow">Stevano</h4>
-                <p className="text-[#F8F8F6] text-[16px] font-source">
-                  Happy wedding day boskuu! Happily ever after. Tuhan berkati selalu keluarga barunya
-                </p>
-              </div>
-              
-              <hr className="border-0 h-[1.5px] bg-white/20 mb-2" />
+                        {/* BUTTON */}
+                        <button onClick={handleSubmit}
+                            className="bg-[#F4ECA3] text-[#EB621F] text-[16px] py-3 rounded-xl font-bold font-barlow">
+                            KIRIM PESAN BIAR SEMUA BISA BACA
+                        </button>
+                    </div>
 
-              <div className="px-4">
-                <h4 className="text-[#F4ECA3] text-[20px] font-bold font-barlow">John Doe</h4>
-                <p className="text-[#F8F8F6] text-[16px] font-source">
-                  Congrats Andre & Stephanie! happily ever after. God bless!
-                </p>
-              </div>
-              
-              <hr className="border-0 h-[1.5px] bg-white/20 mb-2" />
+                    {/* KANAN */}
+                    <div className="flex flex-col justify-between h-full">
 
-               <div className="px-4">
-                <h4 className="text-[#F4ECA3] text-[20px] font-bold font-barlow">Christian Ebbyanto</h4>
-                <p className="text-[#F8F8F6] text-[16px] font-source">
-                  Happy wedding day boskuu! Happily ever after. Tuhan berkati selalu keluarga barunya
-                </p>
-              </div>
-              
-              <hr className="border-0 h-[1.5px] bg-white/20 mb-2" />
+                        {/* LIST PESAN */}
+                        <div className="flex flex-col gap-4 max-h-[300px] lg:max-h-none overflow-y-auto">
 
+                            {/* ITEM */}
+                            <div className="px-6">
+                                <h4 className="text-[#F4ECA3] text-[20px] font-bold font-barlow mb-1">John Doe</h4>
+                                <p className="text-[14px] md:text-[16px] font-source text-slate-100">
+                                    Congrats Andre & Stephanie! happily ever after. God bless!
+                                </p>
+                            </div>
+
+                            <div className="w-full h-[1.5px] bg-white/20 shrink-0" />
+
+                            <div className="px-6">
+                                <h4 className="text-[#F4ECA3] text-[20px] font-bold font-barlow mb-1">Christian Ebbyanto</h4>
+                                <p className="text-slate-100 text-[14px] md:text-[16px] font-source">
+                                    Happy wedding day boskuu! Happily ever after. Tuhan berkati selalu keluarga barunya
+                                </p>
+                            </div>
+
+                            <div className="w-full h-[1.5px] bg-white/20 shrink-0" />
+
+                            <div className="px-6">
+                                <h4 className="text-[#F4ECA3] text-[20px] font-bold font-barlow mb-1">Stevano</h4>
+                                <p className="text-slate-100 text-[14px] md:text-[16px] font-source">
+                                    Happy wedding day boskuu! Happily ever after. Tuhan berkati selalu keluarga barunya
+                                </p>
+                            </div>
+
+                            <div className="w-full h-[1.5px] bg-white/20 shrink-0" />
+
+                            <div className="px-6">
+                                <h4 className="text-[#F4ECA3] text-[20px] font-bold font-barlow mb-1">John Doe</h4>
+                                <p className="text-slate-100 text-[14px] md:text-[16px] font-source">
+                                    Congrats Andre & Stephanie! happily ever after. God bless!
+                                </p>
+                            </div>
+
+                            <div className="w-full h-[1.5px] bg-white/20 shrink-0" />
+
+                            <div className="px-6">
+                                <h4 className="text-[#F4ECA3] text-[20px] font-bold font-barlow mb-1">Christian Ebbyanto</h4>
+                                <p className="text-slate-100 text-[14px] md:text-[16px] font-source">
+                                    Happy wedding day boskuu! Happily ever after. Tuhan berkati selalu keluarga barunya
+                                </p>
+                            </div>
+
+                            <div className="w-full h-[1.5px] bg-white/20 shrink-0" />
+
+                        </div>
+
+                        {/* BUTTON BAWAH */}
+                        <button className="mt-6 border border-[#F4ECA3] text-[#F4ECA3] py-3 rounded-xl font-bold text-[16px] font-barlow">
+                            LIHAT PESAN YANG LAIN
+                        </button>
+                    </div>
+
+                </div>
+
+                {/* FOOTER TEXT */}
+                <div className="text-center mt-24 text-[#F4ECA3] text-[16px] font-bold font-barlow space-y-5">
+                    <p>TERIMA KASIH TEMAN-TEMAN YANG MAU JAJAN BARENG UUN VOL. 2!</p>
+                    <p>SEMOGA PULANG TIDAK BAWA KENYANG, TAPI JUGA <span className="block md:inline">KENANGAN</span></p>
+                </div>
             </div>
 
-            {/* BUTTON BAWAH */}
-            <button className="mt-6 border border-[#F4ECA3] text-[#F4ECA3] py-3 rounded-xl font-bold text-[16px] font-barlow">
-              LIHAT PESAN YANG LAIN
-            </button>
-          </div>
+            {showNotif && (
+                <div className="fixed inset-0 flex items-center justify-center z-50">
 
-        </div>
+                    <div className="absolute inset-0 bg-black/40"></div>
 
-        {/* FOOTER TEXT */}
-        <div className="text-center mt-16 text-[#F4ECA3] text-[16px] font-bold font-barlow space-y-5">
-          <p>TERIMA KASIH TEMAN-TEMAN YANG MAU JAJAN BARENG UUN VOL. 2!</p>
-          <p>SEMOGA PULANG TIDAK BAWA KENYANG, TAPI JUGA KENANGAN.</p>
-        </div>
-      </div>
-    </section>
-  );
+                    <div className="relative bg-[#F4ECA3] text-[#EB621F] px-8 py-6 rounded-2xl shadow-xl text-center font-barlow animate-fadeIn">
+                        <h3 className="text-[20px] font-bold mb-2">Terima Kasih :)</h3>
+                        <p className="text-sm">
+                            Pesan kamu berhasil dikirim!
+                        </p>
+                    </div>
+                </div>
+            )}
+        </section>
+    );
 };
 
 export default Wishes;
