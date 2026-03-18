@@ -16,7 +16,7 @@ export default function OpeningScreen({ onOpen }: Props) {
             exit={{ y: "-100%" }}
             transition={{ duration: 0.8, ease: "easeInOut" }}
             className=" fixed inset-0 z-[9999] 
-  bg-black/50 lg:bg-[#EB621F]   // overlay hitam di HP
+  bg-black/70 lg:bg-[#EB621F]   // overlay hitam di HP
   flex items-center justify-center 
   overflow-hidden"
         >
@@ -114,6 +114,13 @@ export default function OpeningScreen({ onOpen }: Props) {
                 />
 
                 {/* ORANG */}
+                 <Image
+                                        src="/image/hero/BGKUNING.png"
+                                        alt="uun"
+                                        width={165}
+                                        height={160}
+                                        className="absolute top-[34%] md:top-[23%] lg:top-[37.2%] right-[25%] md:right-[33.5%] lg:right-[30.6%] z-0 scale-[0.7] md:scale-100"
+                                    />
                 <Image
                     src="/image/hero/Cewek - Kanan.png"
                     alt="cewek"
@@ -226,8 +233,63 @@ export default function OpeningScreen({ onOpen }: Props) {
                                             alt="uun"
                                             width={160}
                                             height={160}
-                                            className="absolute top-[37%] left-[47%] z-10 -translate-x-1/2"
+                                            className="absolute top-[37%] left-[47%] z-30 -translate-x-1/2"
                                         />
+
+                     <Image
+                    src="/image/hero/VOLUME 2.png"
+                    alt="volume"
+                    width={70}
+                    height={95}
+                    className="absolute top-[5%] left-[76%] z-10 -translate-x-1/2"
+                />
+
+                 {/* WAVE */}
+                <Image
+                    src="/image/hero/WAVE LINE KANAN ATAS.png"
+                    alt="wave"
+                    width={70}
+                    height={95}
+                    className="absolute top-[18%] left-[16%] z-10 -translate-x-1/2"
+                />
+
+                {/* ZIGZAG */}
+                <Image
+                    src="/image/hero/ZIG-ZAG LINE KANAN BAWAH.png"
+                    alt="zigzag"
+                    width={70}
+                    height={95}
+                    className="absolute top-[35%] left-[90%] -translate-x-1/2"
+                />
+
+                  {/* ORANG */}
+                                    <Image
+                                        src="/image/hero/Cewek - Kanan.png"
+                                        alt="cewek"
+                                        width={55}
+                                        height={114}
+                                        className="
+                                                                         absolute top-[32%] left-[47%] -translate-x-1/2 z-10
+                                                                       "
+                                    />
+                
+                                    <Image
+                                        src="/image/hero/Char - Cowok - Kanan.png"
+                                        alt="cowok"
+                                        width={55}
+                                        height={114}
+                                        className="
+                                                                        absolute top-[31%] left-[59%] -translate-x-1/2 z-10
+                                                                       "
+                                    />
+
+                                    <Image
+                                                            src="/image/hero/BGKUNING.png"
+                                                            alt="uun"
+                                                            width={90}
+                                                            height={160}
+                                                            className=" absolute top-[33%] left-[52%] -translate-x-1/2 z-0" 
+                                                        />
 
                     <Image
                                             src="/image/hero/GEROBAK BAKSO.png"
@@ -245,7 +307,7 @@ export default function OpeningScreen({ onOpen }: Props) {
                                             width={220}
                                             height={342}
                                             className="
-                                                    absolute top-[37%] left-[96%] -translate-x-1/2
+                                                    absolute top-[37%] left-[91%] -translate-x-1/2
                                                                               "
                                         />
 
@@ -260,7 +322,7 @@ export default function OpeningScreen({ onOpen }: Props) {
                                             />
 
                         <p className="
-                                   absolute top-[65%]  z-10
+                                   absolute top-[66%]  z-10
                                       font-barlow font-bold text-center text-[#F4ECA3] text-[24px]
                                    ">
                         JAJAN - MAIN - MAKAN
