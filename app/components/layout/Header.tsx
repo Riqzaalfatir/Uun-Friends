@@ -21,7 +21,7 @@ const Header = () => {
       <nav className="flex justify-center items-center px-6 py-5 relative">
 
         {/* DESKTOP MENU */}
-        <div className="hidden md:flex gap-[40px] text-[14px] uppercase tracking-widest font-barlow font-bold text-[#F4ECA3]">
+        <div className="hidden md:flex gap-[40px] text-[14px] md:text-[18px] lg:text-[14px] uppercase tracking-widest font-barlow font-bold text-[#F4ECA3]">
           {menuItems.map((item, i) => (
             <a key={i} href={item.link} className="hover:opacity-70 transition">
               {item.name}
