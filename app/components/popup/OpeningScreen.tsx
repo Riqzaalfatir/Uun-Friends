@@ -188,7 +188,7 @@ export default function OpeningScreen({ onOpen }: Props) {
                 </motion.button>
             </div>
 
-            <div className="flex lg:hidden items-center justify-center w-full h-full px-4">
+            <div className="flex lg:hidden items-center justify-center w-full h-full px-4 py-8">
 
                 <div className="relative w-full max-w-[380px]
   h-[550px] aspect-[4/5] bg-[#EB621F] rounded-xl  shadow-2xl overflow-hidden flex items-center justify-center">
