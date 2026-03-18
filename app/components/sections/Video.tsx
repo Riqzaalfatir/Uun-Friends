@@ -25,7 +25,7 @@ const Video = () => {
         {/* IMAGE */}
       <div className="relative z-10 flex justify-center items-center">
         <Image
-          src="/image/video/video.png"
+          src="/image/video/Video.png"
           alt="video"
           width={366}
           height={600}

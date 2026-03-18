@@ -55,7 +55,7 @@ const Hero = () => {
                             alt="volume"
                             width={133}
                             height={105}
-                            className="absolute top-[23%] md:top-[7%] lg:top-[9.4%] left-[65%] md:left-[65%] lg:right-[31.6%] scale-[0.8] md:scale-100"
+                            className="absolute top-[23%] md:top-[7%] lg:top-[9.4%] left-[65%] md:left-[65%] lg:left-[58.6%] scale-[0.8] md:scale-100"
                         />
 
                         {/* WAVE */}
@@ -99,7 +99,7 @@ const Hero = () => {
                             className="
                                absolute 
                                top-[114%] md:top-[79%] lg:top-[48%]
-                               left-[55%] md:left-[60%] lg:right-[15.5%]
+                               left-[55%] md:left-[60%] lg:left-[55.5%]
                                scale-[0.8] md:scale-100
                             "
                         />
@@ -147,7 +147,7 @@ const Hero = () => {
                         {/* TEXT BAWAH */}
                         <p className="
                            absolute 
-                           top-[280%] md:top-[220%] lg:top-[84.1%]
+                           top-[240%] md:top-[200%] lg:top-[84.1%]
                            left-1/2 -translate-x-1/2
                            text-[#F4ECA3]
                            text-[35px] md:text-[55px] lg:text-[40px]
