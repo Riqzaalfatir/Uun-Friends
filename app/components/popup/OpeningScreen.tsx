@@ -190,19 +190,27 @@ export default function OpeningScreen({ onOpen }: Props) {
 
             <div className="flex lg:hidden items-center justify-center w-full h-full px-4">
 
-                <div className="  relative w-full max-w-[380px]
-  h-[85vh] max-h-[550px]
-  bg-[#EB621F]
-  rounded-xl shadow-2xl
-  overflow-hidden
-  flex items-center justify-center">
+                <div className="  relative w-full max-w-[380px] h-[80vh] max-h-[550px] bg-[#EB621F] rounded-xl shadow-2xl overflow-hidden flex items-center justify-center">
+
+                    {/* GARIS ATAS */}
+                    <div className="absolute top-[68px] md:top-[110px] lg:top-[68px] left-0 w-full flex flex-col gap-[38px] md:gap-[54px]  pointer-events-none">
+                        <div className="w-full h-[1px] bg-[#CC561B]" />
+                        <div className="w-full h-[1px] bg-[#CC561B]" />
+                        <div className="w-full h-[1px] bg-[#CC561B]" />
+                    </div>
+
+                    <div className="absolute bottom-[68px] md:bottom-[97px] lg:bottom-[68px] left-0 w-full flex flex-col gap-[38px] md:gap-[54px]  pointer-events-none">
+                        <div className="w-full h-[1px] bg-[#CC561B]" />
+                        <div className="w-full h-[1px] bg-[#CC561B]" />
+                        <div className="w-full h-[1px] bg-[#CC561B]" />
+                    </div>
 
                     <Image
                         src="/image/hero/JAJAN.png"
                         alt="jajan"
-                        width={260}
+                        width={240}
                         height={200}
-                        className="absolute top-[10%] left-1/2 -translate-x-1/2"
+                        className="absolute top-[8%] left-1/2 -translate-x-1/2"
                     />
 
                     <Image
@@ -210,12 +218,72 @@ export default function OpeningScreen({ onOpen }: Props) {
                         alt="bareng"
                         width={300}
                         height={200}
-                        className="absolute top-[35%] left-1/2 -translate-x-1/2"
+                        className="absolute top-[24%] left-1/2 -translate-x-1/2"
                     />
+
+                                  <Image
+                                            src="/image/hero/UUN text.png"
+                                            alt="uun"
+                                            width={160}
+                                            height={160}
+                                            className="absolute top-[37%] left-[47%] z-10 -translate-x-1/2"
+                                        />
+
+                    <Image
+                                            src="/image/hero/GEROBAK BAKSO.png"
+                                            alt="gerobak"
+                                            width={160}
+                                            height={210}
+                                            className="
+                                                    absolute top-[40%] left-[6%] -translate-x-1/2
+                                                                               "
+                                        />
+                    
+                                        <Image
+                                            src="/image/hero/WARUNG KANAN.png"
+                                            alt="warung"
+                                            width={220}
+                                            height={342}
+                                            className="
+                                                    absolute top-[37%] left-[96%] -translate-x-1/2
+                                                                              "
+                                        />
+
+                        <Image
+                                                src="/image/hero/Kang Bakso.png"
+                                                alt="bakso"
+                                                width={170}
+                                                height={355}
+                                                className="
+                                                    absolute top-[50%] left-[36%] z-10 -translate-x-1/2            
+                                                                               "
+                                            />
+
+                        <p className="
+                                   absolute top-[65%]  z-10
+                                      font-barlow font-bold text-center text-[#F4ECA3] text-[24px]
+                                   ">
+                        JAJAN - MAIN - MAKAN
+                    </p>
+
+                        <p className="
+                                   absolute top-[73%]  z-10
+                                      font-source  text-center text-[#F4ECA3] text-[16px]
+                                   ">
+                        Untuk
+                    </p>
+
+                        <p className="
+                                   absolute top-[77%]  z-10
+                                      font-barlow font-bold  text-center text-[#F4ECA3] text-[20px]
+                                   ">
+                        John Doe
+                    </p>
+
 
                     <motion.button
                         onClick={onOpen}
-                        className="absolute bottom-[8%] w-[80%] py-3 bg-[#F4ECA3] text-[#EB621F] rounded-xl font-bold"
+                        className="absolute bottom-[8%] w-[80%] py-2 bg-[#F4ECA3] text-[#EB621F] text-[16px] rounded-xl font-bold font-barlow"
                     >
                         Buka Undangan
                     </motion.button>
