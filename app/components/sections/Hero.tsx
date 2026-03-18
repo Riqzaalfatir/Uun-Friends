@@ -147,7 +147,7 @@ const Hero = () => {
                         {/* TEXT BAWAH */}
                         <p className="
                            absolute 
-                           top-[260%] md:top-[200%] lg:top-[84.1%]
+                           top-[255%] md:top-[200%] lg:top-[84.1%]
                            left-1/2 -translate-x-1/2
                            text-[#F4ECA3]
                            text-[35px] md:text-[55px] lg:text-[40px]
