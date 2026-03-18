@@ -20,7 +20,7 @@ const Hero = () => {
 
             {/* ✅ WRAPPER CENTER */}
             <div className="w-full flex justify-center">
-                <div className="w-full max-w-[1440px] px-4 pt-10 md:pt-56 lg:pt-0">
+                <div className="w-full max-w-[1440px] px-4 pt-10 md:pt-36 lg:pt-0">
 
                     <div className="relative w-full aspect-[1440/850] ">
 
