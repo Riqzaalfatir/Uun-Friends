@@ -12,7 +12,6 @@ const Hero = () => {
     return (
         <section className="relative w-full min-h-screen bg-[#EB621F] overflow-hidden">
 
-            {/* ✅ GARIS */}
             <div className="absolute top-[68px] md:top-[110px] lg:top-[68px] left-0 w-full flex flex-col gap-[38px] md:gap-[54px]  pointer-events-none">
                 <div className="w-full h-[1px] bg-[#CC561B]" />
                 <div className="w-full h-[1px] bg-[#CC561B]" />
@@ -25,11 +24,10 @@ const Hero = () => {
                 <div className="w-full h-[1px] bg-[#CC561B]" />
             </div>
 
-            {/* ✅ WRAPPER CENTER */}
+
             <div className="flex items-center justify-center min-h-screen pt-6 md:pt-40 lg:pt-0">
                 <div className="relative w-full max-w-[380px] md:max-w-[600px] lg:max-w-[500px] aspect-[4/5]">
 
-                    {/* TEXT */}
                     <Image
                         src="/image/hero/JAJAN.png"
                         alt="jajan"
@@ -61,7 +59,6 @@ const Hero = () => {
                         height={160}
                         className="absolute top-[34%] md:top-[23%] lg:top-[50.2%] right-[25%] md:right-[33.5%] lg:right-[30.6%] z-0 scale-[0.7] md:scale-100"
                     />
-                    {/* ILUSTRASI */}
 
                     <Image
                         src="/image/hero/VOLUME 2.png"
@@ -71,7 +68,6 @@ const Hero = () => {
                         className="absolute -top-[13%] md:-top-[20%] lg:top-[3%] left-[70%] md:left-[69%] lg:left-[70%] scale-[0.8] md:scale-100"
                     />
 
-                    {/* WAVE */}
                     <Image
                         src="/image/hero/WAVE LINE KANAN ATAS.png"
                         alt="wave"
@@ -80,7 +76,6 @@ const Hero = () => {
                         className="absolute top-[8%] md:-top-[5%] lg:top-[22.7%] right-[78%] md:right-[76%] lg:right-[82%] scale-[0.7] md:scale-100"
                     />
 
-                    {/* ZIGZAG */}
                     <Image
                         src="/image/hero/ZIG-ZAG LINE KANAN BAWAH.png"
                         alt="zigzag"
@@ -94,12 +89,7 @@ const Hero = () => {
                         alt="gerobak"
                         width={285}
                         height={210}
-                        className="
-                                                              absolute 
-                                                              top-[33%] md:top-[26%] lg:top-[53%] xl:top-[51.8%]
-                                                              right-[55%] md:right-[68%] lg:right-[21%] xl:right-[65%]
-                                                              scale-[0.7] md:scale-100
-                                                           "
+                        className="absolute top-[33%] md:top-[26%] lg:top-[53%] xl:top-[51.8%] right-[55%] md:right-[68%] lg:right-[21%] xl:right-[65%] scale-[0.7] md:scale-100"
                     />
 
                     <Image
@@ -107,26 +97,15 @@ const Hero = () => {
                         alt="warung"
                         width={410}
                         height={342}
-                        className="
-                                                             absolute 
-                                                             top-[31%] md:top-[22%] lg:top-[48%]
-                                                             left-[54%] md:left-[64%] lg:left-[64.5%]
-                                                             scale-[0.8] md:scale-100
-                                                          "
+                        className="absolute top-[31%] md:top-[22%] lg:top-[48%] left-[54%] md:left-[64%] lg:left-[64.5%] scale-[0.8] md:scale-100"
                     />
 
-                    {/* ORANG */}
                     <Image
                         src="/image/mentahan/Mentahan-Cewe.png"
                         alt="cewek"
                         width={70}
                         height={114}
-                        className="
-                                                          absolute 
-                                                          top-[30%] md:top-[20%] lg:top-[47.1%]
-                                                          left-[37%] md:left-[40%] lg:left-[40.3%]
-                                                          z-10 scale-[0.6] md:scale-100
-                                                       "
+                        className="absolute top-[30%] md:top-[20%] lg:top-[47.1%] left-[37%] md:left-[40%] lg:left-[40.3%] z-10 scale-[0.6] md:scale-100"
                     />
 
                     <Image
@@ -134,12 +113,7 @@ const Hero = () => {
                         alt="cowok"
                         width={70}
                         height={114}
-                        className="
-                                                          absolute 
-                                                          top-[29%] md:top-[19%] lg:top-[45.1%]
-                                                          right-[30%] md:right-[34%] lg:right-[30.7%]
-                                                          z-10 scale-[0.6] md:scale-100
-                                                       "
+                        className="absolute top-[29%] md:top-[19%] lg:top-[45.1%] right-[30%] md:right-[34%] lg:right-[30.7%] z-10 scale-[0.6] md:scale-100"
                     />
 
                     <Image
@@ -147,15 +121,9 @@ const Hero = () => {
                         alt="bakso"
                         width={280}
                         height={355}
-                        className="
-                                                          absolute 
-                                                          top-[53%] md:top-[41%] lg:top-[70%]
-                                                          right-[27%] md:left-[13%] lg:left-[12.1%]
-                                                          z-40 scale-[0.75] md:scale-100
-                                                       "
+                        className="absolute top-[53%] md:top-[41%] lg:top-[70%] right-[27%] md:left-[13%] lg:left-[12.1%] z-40 scale-[0.75] md:scale-100"
                     />
 
-                    {/* MENTAHAN ORANG */}
                     <motion.div
                         animate={{
                             rotate: [0, 3, -3, 0],
@@ -177,67 +145,44 @@ const Hero = () => {
                         />
                     </motion.div>
 
-                     {/* MENTAHAN ORANG CEWE */}
-                                    <motion.div
-                                        animate={{
-                                            rotate: [0, 3, -3, 0],
-                                            y: [0, -2, 2, 0]
-                                        }}
-                                        transition={{
-                                            duration: 2,
-                                            repeat: Infinity,
-                                            ease: "easeInOut"
-                                        }}
-                                        style={{ transformOrigin: "center top" }}
-                                        className="absolute top-[32%] md:top-[16%] lg:top-[41%] right-[48.5%] md:left-[38.9%] lg:left-[38.6%] z-20 w-[44px] md:w-[120px] lg:w-[140px] h-auto"
-                                    >
-                                        <Image
-                                            src="/image/mentahan/Muka-Cewe.png"
-                                            alt="bakso"
-                                            width={77}
-                                            height={355}
-                                        />
-                                    </motion.div>
+                    <motion.div
+                        animate={{
+                            rotate: [0, 3, -3, 0],
+                            y: [0, -2, 2, 0]
+                                }}
+                            transition={{
+                                duration: 2,
+                                repeat: Infinity,
+                                ease: "easeInOut"
+                                }}
+                                style={{ transformOrigin: "center top" }}
+                                className="absolute top-[32%] md:top-[16%] lg:top-[41%] right-[48.5%] md:left-[38.9%] lg:left-[38.6%] z-20 w-[44px] md:w-[120px] lg:w-[140px] h-auto"
+                                >
+                        <Image  src="/image/mentahan/Muka-Cewe.png" alt="bakso" width={77}  height={355} />
+                    </motion.div>
                     
-                                    {/* MENTAHAN ORANG COWO */}
-                                    <motion.div
-                                        animate={{
-                                            rotate: [0, 3, -3, 0],
-                                            y: [0, -2, 2, 0]
-                                        }}
-                                        transition={{
-                                            duration: 2,
-                                            repeat: Infinity,
-                                            ease: "easeInOut"
-                                        }}
-                                        style={{ transformOrigin: "center top" }}
-                                        className="absolute top-[29%] md:top-[15%] lg:top-[38.5%] right-[33.5%] md:left-[54.8%] lg:left-[55.8%] z-20 w-[40px] md:w-[120px] h-auto"
-                                    >
-                                        <Image
-                                            src="/image/mentahan/Muka-Cowo.png"
-                                            alt="bakso"
-                                            width={65}
-                                            height={355}
-                                        />
-                                    </motion.div>
+                    <motion.div
+                        animate={{
+                            rotate: [0, 3, -3, 0],
+                            y: [0, -2, 2, 0]
+                                }}
+                            transition={{
+                                duration: 2,
+                                repeat: Infinity,
+                                ease: "easeInOut"
+                                    }}
+                            style={{ transformOrigin: "center top" }}
+                            className="absolute top-[29%] md:top-[15%] lg:top-[38.5%] right-[33.5%] md:left-[54.8%] lg:left-[55.8%] z-20 w-[40px] md:w-[120px] h-auto">
+                        <Image src="/image/mentahan/Muka-Cowo.png" alt="bakso"  width={65}  height={355} />
+                    </motion.div>
                     
-                                    <img
-                                        src="/image/mentahan/asap.gif"
-                                        alt="animasi"
-                                        className="absolute w-[50px] h-auto top-[60%] md:top-[45.5%] lg:top-[75.5%] right-[64.5%] md:left-[26.5%] lg:left-[28.3%] z-50 opacity-50"
-                                    />
+                    <img src="/image/mentahan/asap.gif" alt="animasi"
+                         className="absolute w-[50px] h-auto top-[60%] md:top-[45.5%] lg:top-[75.5%] right-[64.5%] md:left-[26.5%] lg:left-[28.3%] z-50 opacity-50"
+                    />
                     
 
 
-                    {/* TEXT BAWAH */}
-                    <p className="
-                                      absolute 
-                                      top-[100%] md:top-100%] lg:top-[94.1%]
-                                      left-1/2 -translate-x-1/2
-                                      text-[#F4ECA3]
-                                      text-[35px] md:text-[55px] lg:text-[40px]
-                                      font-barlow font-bold text-center scale-[0.9] md:scale-100 whitespace-nowrap
-                                   ">
+                    <p className="absolute top-[100%] md:top-100%] lg:top-[94.1%]  left-1/2 -translate-x-1/2   text-[35px] md:text-[55px] lg:text-[40px] text-[#F4ECA3]   font-barlow font-bold text-center text-[] scale-[0.9] md:scale-100 whitespace-nowrap">
                         JAJAN - MAIN - MAKAN
                     </p>
 

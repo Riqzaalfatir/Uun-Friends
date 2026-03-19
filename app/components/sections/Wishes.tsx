@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 type WishesProps = {
   onShowAll: () => void;
@@ -30,7 +31,11 @@ const Wishes = ({ onShowAll }: WishesProps) => {
             <div className="max-w-7xl mx-auto px-4">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
 
-                    <div className="flex flex-col gap-6">
+                    <motion.div  initial={{ opacity: 0, x: -40 }} 
+                       whileInView={{ opacity: 1, x: 0 }}
+                       transition={{ duration: 1.2, ease: [0.25, 1, 0.5, 1] }}
+                       viewport={{ once: true }} 
+                       className="flex flex-col gap-6">
                         <h2 className="text-[#F4ECA3] font-barlow font-bold text-[40px] md:text-[70px] lg:text-[90px] leading-[100%] uppercase">
                             DOA DAN <span className="lg:block">HARAPAN UNTUK </span>
                             <span className="md:block">KITA SEMUA</span>
@@ -56,9 +61,14 @@ const Wishes = ({ onShowAll }: WishesProps) => {
                             className="bg-[#F4ECA3] text-[#EB621F] text-[16px] py-3 rounded-xl font-bold font-barlow">
                             KIRIM PESAN BIAR SEMUA BISA BACA
                         </button>
-                    </div>
+                    </motion.div>
 
-                    <div className="flex flex-col justify-between h-full">
+                    <motion.div
+                       initial={{ opacity: 0, x: 40 }}
+                       whileInView={{ opacity: 1, x: 0 }}
+                       transition={{ duration: 1.2, ease: [0.25, 1, 0.5, 1] }}
+                       viewport={{ once: true }} 
+                       className="flex flex-col justify-between h-full">
 
                         <div className="flex flex-col gap-4 max-h-[300px] lg:max-h-none overflow-y-auto">
 
@@ -112,14 +122,19 @@ const Wishes = ({ onShowAll }: WishesProps) => {
                         <button onClick={onShowAll} className="mt-6 border border-[#F4ECA3] text-[#F4ECA3] py-3 rounded-xl font-bold text-[16px] font-barlow">
                             LIHAT PESAN YANG LAIN
                         </button>
-                    </div>
+                    </motion.div>
 
                 </div>
 
-                <div className="text-center mt-24 text-[#F4ECA3] text-[16px] font-bold font-barlow space-y-5">
+                <motion.div 
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1.2, ease: [0.25, 1, 0.5, 1] }}
+                    viewport={{ once: true }}
+                    className="text-center mt-24 text-[#F4ECA3] text-[16px] font-bold font-barlow space-y-5">
                     <p>TERIMA KASIH TEMAN-TEMAN YANG MAU JAJAN BARENG UUN VOL. 2!</p>
                     <p>SEMOGA PULANG TIDAK BAWA KENYANG, TAPI JUGA <span className="block md:inline">KENANGAN</span></p>
-                </div>
+                </motion.div>
             </div>
 
             {showNotif && (

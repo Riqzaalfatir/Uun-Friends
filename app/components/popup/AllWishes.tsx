@@ -42,7 +42,7 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
           </div>
 
           <div className="relative w-full max-w-[380px] md:max-w-[700px] lg:max-w-[700px] aspect-[4/5] ">
-            <div className="absolute -top-20 left-4 md:-top-[236px] md:-left-1 lg:top-6 lg:left-6 z-50">
+            <div className="absolute -top-24 left-4 md:-top-[236px] md:-left-1 lg:top-6 lg:left-6 z-50">
               <button
                 onClick={onClose}
                 className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/70 text-white text-[8px] md:text-[16px] lg:text-[8px] font-medium backdrop-blur-sm hover:bg-white/10 transition active:scale-95 font-source"
