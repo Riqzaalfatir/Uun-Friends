@@ -10,6 +10,7 @@ const Wishes = ({ onShowAll }: WishesProps) => {
     const [name, setName] = useState("");
     const [message, setMessage] = useState("");
     const [showNotif, setShowNotif] = useState(false)
+    
 
     const handleSubmit = () => {
         if (!name || !message) return;
