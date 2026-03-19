@@ -11,9 +11,11 @@ import Rsvp from "./components/sections/Rsvp";
 import Wishes from "./components/sections/Wishes";
 import OpeningScreen from "./components/popup/OpeningScreen";
 import { AnimatePresence } from "framer-motion";
+import AllWishes from "./components/popup/AllWishes";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
+  const [showAllWishes, setShowAllWishes] = useState(false);
 
   useEffect(() => {
     if (!isOpen) {
@@ -32,14 +34,19 @@ export default function Home() {
         <WaktuTempat />
         <Video />
         <Rsvp />
-        <Wishes />
-      </main>
+<Wishes onShowAll={() => setShowAllWishes(true)} />      </main>
 
       <Footer />
 
       <AnimatePresence>
         {!isOpen && (
           <OpeningScreen onOpen={() => setIsOpen(true)} />
+        )}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {showAllWishes && (
+          <AllWishes onClose={() => setShowAllWishes(false)} />
         )}
       </AnimatePresence>
     </>

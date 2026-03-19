@@ -2,7 +2,11 @@
 
 import React, { useState } from "react";
 
-const Wishes = () => {
+type WishesProps = {
+  onShowAll: () => void;
+};
+
+const Wishes = ({ onShowAll }: WishesProps) => {
     const [name, setName] = useState("");
     const [message, setMessage] = useState("");
     const [showNotif, setShowNotif] = useState(false)
@@ -104,7 +108,7 @@ const Wishes = () => {
 
                         </div>
 
-                        <button className="mt-6 border border-[#F4ECA3] text-[#F4ECA3] py-3 rounded-xl font-bold text-[16px] font-barlow">
+                        <button onClick={onShowAll} className="mt-6 border border-[#F4ECA3] text-[#F4ECA3] py-3 rounded-xl font-bold text-[16px] font-barlow">
                             LIHAT PESAN YANG LAIN
                         </button>
                     </div>
