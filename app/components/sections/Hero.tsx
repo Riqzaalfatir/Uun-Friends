@@ -117,27 +117,27 @@ const Hero = () => {
 
                     {/* ORANG */}
                     <Image
-                        src="/image/hero/Cewek - Kanan.png"
+                        src="/image/mentahan/Mentahan-Cewe.png"
                         alt="cewek"
-                        width={95}
+                        width={70}
                         height={114}
                         className="
                                                           absolute 
-                                                          top-[26%] md:top-[17%] lg:top-[41.1%]
-                                                          left-[34%] md:left-[38%] lg:left-[38.3%]
+                                                          top-[30%] md:top-[20%] lg:top-[47.1%]
+                                                          left-[37%] md:left-[40%] lg:left-[40.3%]
                                                           z-10 scale-[0.6] md:scale-100
                                                        "
                     />
 
                     <Image
-                        src="/image/hero/Char - Cowok - Kanan.png"
+                        src="/image/mentahan/Mentahan-Cowo.png"
                         alt="cowok"
-                        width={95}
+                        width={70}
                         height={114}
                         className="
                                                           absolute 
-                                                          top-[26%] md:top-[17%] lg:top-[41.1%]
-                                                          right-[27%] md:right-[32%] lg:right-[30.7%]
+                                                          top-[29%] md:top-[19%] lg:top-[45.1%]
+                                                          right-[30%] md:right-[34%] lg:right-[30.7%]
                                                           z-10 scale-[0.6] md:scale-100
                                                        "
                     />
@@ -167,7 +167,7 @@ const Hero = () => {
                             ease: "easeInOut"
                         }}
                         style={{ transformOrigin: "center top" }}
-                        className="absolute top-[55%] md:top-[41%] lg:top-[68%] right-[57.5%] md:left-[13%] lg:left-[36%] z-40 w-[40px] md:w-[120px] lg:w-[140px] h-auto"
+                        className="absolute top-[55%] md:top-[40%] lg:top-[68%] right-[57.5%] md:left-[33%] lg:left-[36%] z-40 w-[40px] md:w-[120px] lg:w-[140px] h-auto"
                     >
                         <Image
                             src="/image/mentahan/MentahanKangBakso.png"
@@ -176,6 +176,57 @@ const Hero = () => {
                             height={355}
                         />
                     </motion.div>
+
+                     {/* MENTAHAN ORANG CEWE */}
+                                    <motion.div
+                                        animate={{
+                                            rotate: [0, 3, -3, 0],
+                                            y: [0, -2, 2, 0]
+                                        }}
+                                        transition={{
+                                            duration: 2,
+                                            repeat: Infinity,
+                                            ease: "easeInOut"
+                                        }}
+                                        style={{ transformOrigin: "center top" }}
+                                        className="absolute top-[32%] md:top-[16%] lg:top-[41%] right-[48.5%] md:left-[38.9%] lg:left-[38.6%] z-20 w-[44px] md:w-[120px] lg:w-[140px] h-auto"
+                                    >
+                                        <Image
+                                            src="/image/mentahan/Muka-Cewe.png"
+                                            alt="bakso"
+                                            width={77}
+                                            height={355}
+                                        />
+                                    </motion.div>
+                    
+                                    {/* MENTAHAN ORANG COWO */}
+                                    <motion.div
+                                        animate={{
+                                            rotate: [0, 3, -3, 0],
+                                            y: [0, -2, 2, 0]
+                                        }}
+                                        transition={{
+                                            duration: 2,
+                                            repeat: Infinity,
+                                            ease: "easeInOut"
+                                        }}
+                                        style={{ transformOrigin: "center top" }}
+                                        className="absolute top-[29%] md:top-[15%] lg:top-[38.5%] right-[33.5%] md:left-[54.8%] lg:left-[55.8%] z-20 w-[40px] md:w-[120px] h-auto"
+                                    >
+                                        <Image
+                                            src="/image/mentahan/Muka-Cowo.png"
+                                            alt="bakso"
+                                            width={65}
+                                            height={355}
+                                        />
+                                    </motion.div>
+                    
+                                    <img
+                                        src="/image/mentahan/Asap.gif"
+                                        alt="animasi"
+                                        className="absolute w-[50px] h-auto top-[60%] md:top-[45.5%] lg:top-[75.5%] right-[64.5%] md:left-[26.5%] lg:left-[28.3%] z-50 opacity-50"
+                                    />
+                    
 
 
                     {/* TEXT BAWAH */}

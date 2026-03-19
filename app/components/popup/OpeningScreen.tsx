@@ -230,10 +230,10 @@ export default function OpeningScreen({ onOpen }: Props) {
                     />
                 </motion.div>
 
-                <img 
-                   src="/image/mentahan/Asap.gif" 
-                   alt="animasi"
-                   className="absolute w-[50px] h-auto top-[55%] md:top-[41%] lg:top-[65.5%] right-[57.5%] md:left-[13%] lg:left-[28.3%] z-50 opacity-50"
+                <img
+                    src="/image/mentahan/Asap.gif"
+                    alt="animasi"
+                    className="absolute w-[50px] h-auto top-[55%] md:top-[41%] lg:top-[65.5%] right-[57.5%] md:left-[13%] lg:left-[28.3%] z-50 opacity-50"
                 />
 
                 {/* TEXT BAWAH */}
@@ -342,7 +342,7 @@ export default function OpeningScreen({ onOpen }: Props) {
                             ease: "easeInOut"
                         }}
                         style={{ transformOrigin: "center top" }}
-                        className="absolute top-[32%] md:top-[22%] lg:top-[32%] right-[47%] md:left-[40.7%] lg:left-[37.1%] z-20 w-[50px] md:w-[60px] lg:w-[120px] h-auto"
+                        className="absolute top-[31%] md:top-[22%] lg:top-[32%] right-[45.5%] md:left-[40.7%] lg:left-[37.1%] z-20 w-[58px] md:w-[60px] lg:w-[120px] h-auto"
                     >
                         <Image
                             src="/image/mentahan/Muka-Cewe.png"
@@ -364,7 +364,7 @@ export default function OpeningScreen({ onOpen }: Props) {
                             ease: "easeInOut"
                         }}
                         style={{ transformOrigin: "center top" }}
-                        className="absolute top-[29%] md:top-[22%] lg:top-[29.5%] right-[33%] md:left-[51%] lg:left-[55.3%] z-20 w-[45px] md:w-[50px] lg:w-[120px] h-auto"
+                        className="absolute top-[29%] md:top-[22%] lg:top-[29.5%] right-[32.5%] md:left-[51%] lg:left-[55.3%] z-20 w-[48px] md:w-[50px] lg:w-[120px] h-auto"
                     >
                         <Image
                             src="/image/mentahan/Muka-Cowo.png"
@@ -374,10 +374,10 @@ export default function OpeningScreen({ onOpen }: Props) {
                         />
                     </motion.div>
 
-                    <img 
-                      src="/image/mentahan/Asap.gif" 
-                      alt="animasi"
-                      className="absolute w-[30px] md:w-[40px] lg:w-[50px] h-auto top-[54%] md:top-[39.5%] lg:top-[65.5%] right-[66%] md:left-[33.5%] lg:left-[28.3%] z-50 opacity-50"
+                    <img
+                        src="/image/mentahan/asap.gif"
+                        alt="animasi"
+                        className="absolute w-[30px] md:w-[40px] lg:w-[50px] h-auto top-[54%] md:top-[39.5%] lg:top-[65.5%] right-[66%] md:left-[33.5%] lg:left-[28.3%] z-50 opacity-50"
                     />
 
                     {/* TEXT */}

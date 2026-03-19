@@ -129,19 +129,19 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
 
             {/* ORANG */}
             <Image
-              src="/image/hero/Cewek - Kanan.png"
+              src="/image/mentahan/Mentahan-Cewe.png"
               alt="cewek"
-              width={95}
+              width={80}
               height={114}
-              className="absolute top-[26%] md:top-[12%] lg:top-[37.1%] left-[34%] md:left-[40%] lg:left-[41%] z-10 scale-[0.6] md:scale-100"
+              className="absolute top-[30%] md:top-[15%] lg:top-[39.1%] left-[36%] md:left-[40%] lg:left-[41%] z-10 scale-[0.5] md:scale-100"
             />
 
             <Image
-              src="/image/hero/Char - Cowok - Kanan.png"
+              src="/image/mentahan/Mentahan-Cowo.png"
               alt="cowok"
-              width={95}
+              width={80}
               height={114}
-              className="absolute top-[26%] md:top-[12%] lg:top-[37.1%] right-[27%] md:right-[34%] lg:right-[33.7%] z-10 scale-[0.6] md:scale-100"
+              className="absolute top-[28%] md:top-[14%] lg:top-[39.1%] right-[28.2%] md:right-[34%] lg:right-[33.7%] z-10 scale-[0.6] md:scale-100"
             />
 
             <Image
@@ -164,7 +164,7 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
                 ease: "easeInOut"
               }}
               style={{ transformOrigin: "center top" }}
-              className="absolute top-[55%] md:top-[32%] lg:top-[56%] right-[57.5%] md:left-[35%] lg:left-[36%] z-40 w-[40px] md:w-[120px] lg:w-[140px] h-auto"
+              className="absolute top-[55%] md:top-[33%] lg:top-[56%] right-[57.5%] md:left-[35%] lg:left-[36.5%] z-40 w-[40px] md:w-[120px] lg:w-[140px] h-auto"
             >
               <Image
                 src="/image/mentahan/MentahanKangBakso.png"
@@ -173,6 +173,57 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
                 height={355}
               />
             </motion.div>
+
+            {/* MENTAHAN ORANG CEWE */}
+                                                <motion.div
+                                                    animate={{
+                                                        rotate: [0, 3, -3, 0],
+                                                        y: [0, -2, 2, 0]
+                                                    }}
+                                                    transition={{
+                                                        duration: 2,
+                                                        repeat: Infinity,
+                                                        ease: "easeInOut"
+                                                    }}
+                                                    style={{ transformOrigin: "center top" }}
+                                                    className="absolute top-[32%] md:top-[12%] lg:top-[37%] right-[48.5%] md:left-[39.3%] lg:left-[40.6%] z-20 w-[44px] md:w-[120px] lg:w-[140px] h-auto"
+                                                >
+                                                    <Image
+                                                        src="/image/mentahan/Muka-Cewe.png"
+                                                        alt="bakso"
+                                                        width={79}
+                                                        height={355}
+                                                    />
+                                                </motion.div>
+                                
+                                                {/* MENTAHAN ORANG COWO */}
+                                                <motion.div
+                                                    animate={{
+                                                        rotate: [0, 3, -3, 0],
+                                                        y: [0, -2, 2, 0]
+                                                    }}
+                                                    transition={{
+                                                        duration: 2,
+                                                        repeat: Infinity,
+                                                        ease: "easeInOut"
+                                                    }}
+                                                    style={{ transformOrigin: "center top" }}
+                                                    className="absolute top-[29%] md:top-[10%] lg:top-[35.5%] right-[33.5%] md:left-[55.6%] lg:left-[55.8%] z-20 w-[40px] md:w-[120px] h-auto"
+                                                >
+                                                    <Image
+                                                        src="/image/mentahan/Muka-Cowo.png"
+                                                        alt="bakso"
+                                                        width={65}
+                                                        height={355}
+                                                    />
+                                                </motion.div>
+                                
+                                                <img
+                                                    src="/image/mentahan/Asap.gif"
+                                                    alt="animasi"
+                                                    className="absolute w-[50px] h-auto top-[60%] md:top-[38%] lg:top-[60.8%] right-[64.5%] md:left-[29%] lg:left-[30.3%] z-50 opacity-50"
+                                                />
+                                
 
             {/* TEXT BAWAH */}
             <p
