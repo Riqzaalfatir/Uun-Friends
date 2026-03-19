@@ -27,7 +27,7 @@ const Wishes = ({ onShowAll }: WishesProps) => {
     }
 
     return (
-        <section className="pt-20 pb-10 bg-[#EB621F] w-full">
+        <section id="wishes" className="pt-20 pb-10 bg-[#EB621F] w-full">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
 

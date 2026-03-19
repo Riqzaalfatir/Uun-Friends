@@ -50,7 +50,7 @@ const fadeRight: Variants = {
 
 const WaktuTempat = () => {
   return (
-    <section className="bg-[#F4ECA3] w-full py-12 md:py-16">
+    <section id="waktu" className="bg-[#F4ECA3] w-full py-12 md:py-16">
       <motion.div
         variants={container}
         initial="hidden"

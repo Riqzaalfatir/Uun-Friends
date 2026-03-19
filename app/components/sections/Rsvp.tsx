@@ -64,7 +64,7 @@ const Rsvp = () => {
     };
 
     return (
-        <section className="bg-[#F4ECA3] w-full py-10">
+        <section id="rsvp" className="bg-[#F4ECA3] w-full py-10">
             <motion.div
                 variants={container}
                 initial="hidden"

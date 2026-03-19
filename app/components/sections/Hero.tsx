@@ -10,7 +10,7 @@ interface Props {
 const Hero = () => {
 
     return (
-        <section className="relative w-full min-h-screen bg-[#EB621F] overflow-hidden">
+        <section id="home" className="relative w-full min-h-screen bg-[#EB621F] overflow-hidden">
 
             <div className="absolute top-[68px] md:top-[110px] lg:top-[68px] left-0 w-full flex flex-col gap-[38px] md:gap-[54px]  pointer-events-none">
                 <div className="w-full h-[1px] bg-[#CC561B]" />

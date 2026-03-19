@@ -41,7 +41,7 @@ const lineAnim: Variants = {
 
 const Video = () => {
   return (
-    <section className="relative bg-[#EB621F] w-full px-6 py-10 flex items-center justify-center overflow-hidden">
+    <section id="video" className="relative bg-[#EB621F] w-full px-6 py-10 flex items-center justify-center overflow-hidden">
       
       <div className="absolute top-[128px] left-0 w-full flex flex-col gap-[40px] pointer-events-none">
         {[...Array(3)].map((_, i) => (

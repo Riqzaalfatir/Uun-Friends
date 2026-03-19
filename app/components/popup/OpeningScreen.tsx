@@ -19,7 +19,7 @@ export default function OpeningScreen({ onOpen }: Props) {
             transition={{ duration: 0.8, ease: "easeInOut" }}
             className="
                 fixed inset-0 z-[9999]
-                bg-black/70 lg:bg-[#EB621F]
+                bg-black/50 lg:bg-[#EB621F]
                 flex items-center justify-center
                 overflow-hidden
             "
