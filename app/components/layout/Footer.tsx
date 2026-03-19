@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const Footer = () => {
   return (
-    <footer className='py-6  bg-[#EB621F] w-full flex items-center justify-center'>
+    <footer className='py-6 bg-[#EB621F] w-full flex items-center justify-center'>
 
         <Image
           src="/image/footer/Provite Logo.png"

@@ -25,14 +25,12 @@ const Wishes = () => {
             <div className="max-w-7xl mx-auto px-4">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
 
-                    {/* KIRI */}
                     <div className="flex flex-col gap-6">
                         <h2 className="text-[#F4ECA3] font-barlow font-bold text-[40px] md:text-[70px] lg:text-[90px] leading-[100%] uppercase">
                             DOA DAN <span className="lg:block">HARAPAN UNTUK </span>
                             <span className="md:block">KITA SEMUA</span>
                         </h2>
 
-                        {/* INPUT */}
                         <input
                             type="text"
                             value={name}
@@ -49,20 +47,16 @@ const Wishes = () => {
                             className="bg-[#F8F8F6] rounded-xl px-4 py-3 placeholder:text-[14px] placeholder:text-slate-400 placeholder:font-source  outline-none resize-none font-source text-sm"
                         />
 
-                        {/* BUTTON */}
                         <button onClick={handleSubmit}
                             className="bg-[#F4ECA3] text-[#EB621F] text-[16px] py-3 rounded-xl font-bold font-barlow">
                             KIRIM PESAN BIAR SEMUA BISA BACA
                         </button>
                     </div>
 
-                    {/* KANAN */}
                     <div className="flex flex-col justify-between h-full">
 
-                        {/* LIST PESAN */}
                         <div className="flex flex-col gap-4 max-h-[300px] lg:max-h-none overflow-y-auto">
 
-                            {/* ITEM */}
                             <div className="px-6">
                                 <h4 className="text-[#F4ECA3] text-[20px] font-bold font-barlow mb-1">John Doe</h4>
                                 <p className="text-[14px] md:text-[16px] font-source text-slate-100">
@@ -110,7 +104,6 @@ const Wishes = () => {
 
                         </div>
 
-                        {/* BUTTON BAWAH */}
                         <button className="mt-6 border border-[#F4ECA3] text-[#F4ECA3] py-3 rounded-xl font-bold text-[16px] font-barlow">
                             LIHAT PESAN YANG LAIN
                         </button>
@@ -118,7 +111,6 @@ const Wishes = () => {
 
                 </div>
 
-                {/* FOOTER TEXT */}
                 <div className="text-center mt-24 text-[#F4ECA3] text-[16px] font-bold font-barlow space-y-5">
                     <p>TERIMA KASIH TEMAN-TEMAN YANG MAU JAJAN BARENG UUN VOL. 2!</p>
                     <p>SEMOGA PULANG TIDAK BAWA KENYANG, TAPI JUGA <span className="block md:inline">KENANGAN</span></p>

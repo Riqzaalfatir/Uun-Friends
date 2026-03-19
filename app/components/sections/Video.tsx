@@ -5,7 +5,6 @@ const Video = () => {
   return (
     <section className="relative bg-[#EB621F] w-full px-6 py-10 flex items-center justify-center overflow-hidden">
       
-      {/* GARIS BACKGROUND */}
       <div className="absolute top-[128px] left-0 w-full flex flex-col gap-[40px] pointer-events-none">
                 <div className="w-full h-[1px] bg-[#CC561B]" />
                 <div className="w-full h-[1px] bg-[#CC561B]" />
@@ -19,10 +18,8 @@ const Video = () => {
             </div>
 
 
-      {/* CONTENT */}
       <div className="relative z-10 flex justify-center items-center">
         
-        {/* IMAGE */}
       <div className="relative z-10 flex justify-center items-center">
         <Image
           src="/image/video/Video.png"

@@ -17,10 +17,8 @@ const Header = () => {
   return (
     <header className="absolute top-0 left-0 w-full z-50 ">
       
-      {/* NAVBAR */}
       <nav className="flex justify-center items-center px-6 py-5 relative">
 
-        {/* DESKTOP MENU */}
         <div className="hidden md:flex gap-[40px] text-[14px] md:text-[18px] lg:text-[14px] uppercase tracking-widest font-barlow font-bold text-[#F4ECA3]">
           {menuItems.map((item, i) => (
             <a key={i} href={item.link} className="hover:opacity-70 transition">
@@ -29,7 +27,6 @@ const Header = () => {
           ))}
         </div>
 
-        {/* HAMBURGER */}
         <div className="md:hidden absolute left-8 top-5 z-50">
           {isOpen ? (
             <FaTimes
@@ -47,7 +44,6 @@ const Header = () => {
         </div>
       </nav>
 
-      {/* DROPDOWN FULL WIDTH */}
       <div
         className={`absolute top-0 left-0 w-full bg-[#EB621F] flex flex-col items-center justify-center gap-4 text-[14px] uppercase tracking-widest font-barlow font-bold text-[#F4ECA3] transition-all duration-300 ${
           isOpen

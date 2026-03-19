@@ -21,17 +21,14 @@ const Rsvp = () => {
             <div className="max-w-7xl mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-7 md:gap-10 items-center">
 
-                    {/* KIRI */}
                     <div>
                         <h2 className="text-[#EB621F] font-barlow font-bold text-[40px] md:text-[60px] lg:text-[80px] leading-[100%] uppercase">
                             DATANG <span className="md:block"> NGGAK NIH?</span>
                         </h2>
                     </div>
 
-                    {/* KANAN */}
                     <div className="flex flex-col gap-6">
 
-                        {/* NAMA */}
                         <div>
                             <h3 className="font-barlow font-bold text-[25px] leading-[120%] mb-1">
                                 John Doe
@@ -42,7 +39,6 @@ const Rsvp = () => {
                             </p>
                         </div>
 
-                        {/* BUTTON */}
                         <div className="flex gap-2">
                             <button className="bg-[#EB621F] text-white w-full py-4 rounded-xl font-semibold text-[16px] font-barlow">
                                 DATANG DONG!
@@ -52,7 +48,6 @@ const Rsvp = () => {
                             </button>
                         </div>
 
-                        {/* JUMLAH */}
                         <div className="flex flex-col lg:flex-row items-start lg:items-center gap-1 md:gap-4 mt-2">
                             <p className="text-[16px] font-source text-left">
                                 Datang berapa orang?
@@ -81,7 +76,6 @@ const Rsvp = () => {
                             </div>
                         </div>
 
-                        {/* NOTE + BUTTON */}
                         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 mt-2">
                             <p className="text-[15px] font-source">
                                 Jika ada kendala pada RSVP, silakan hubungi Tim Provite.

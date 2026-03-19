@@ -143,7 +143,7 @@ const Hero = () => {
                     />
 
                     <Image
-                        src="/image/hero/Kang Bakso.png"
+                        src="/image/mentahan/MentahanBakso.png"
                         alt="bakso"
                         width={280}
                         height={355}
@@ -154,6 +154,28 @@ const Hero = () => {
                                                           z-40 scale-[0.75] md:scale-100
                                                        "
                     />
+
+                    {/* MENTAHAN ORANG */}
+                    <motion.div
+                        animate={{
+                            rotate: [0, 3, -3, 0],
+                            y: [0, -2, 2, 0]
+                        }}
+                        transition={{
+                            duration: 2,
+                            repeat: Infinity,
+                            ease: "easeInOut"
+                        }}
+                        style={{ transformOrigin: "center top" }}
+                        className="absolute top-[55%] md:top-[41%] lg:top-[68%] right-[57.5%] md:left-[13%] lg:left-[36%] z-40 w-[40px] md:w-[120px] lg:w-[140px] h-auto"
+                    >
+                        <Image
+                            src="/image/mentahan/MentahanKangBakso.png"
+                            alt="bakso"
+                            width={55}
+                            height={355}
+                        />
+                    </motion.div>
 
 
                     {/* TEXT BAWAH */}

@@ -15,7 +15,6 @@ import { AnimatePresence } from "framer-motion";
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
 
-  // 🔒 Lock scroll sebelum dibuka
   useEffect(() => {
     if (!isOpen) {
       document.body.style.overflow = "hidden";
@@ -26,7 +25,6 @@ export default function Home() {
 
   return (
     <>
-      {/* WEBSITE LU (TETAP NORMAL) */}
       <Header />
 
       <main>
@@ -39,12 +37,11 @@ export default function Home() {
 
       <Footer />
 
-      {/* POPUP OVERLAY */}
       <AnimatePresence>
-  {!isOpen && (
-    <OpeningScreen onOpen={() => setIsOpen(true)} />
-  )}
-</AnimatePresence>
+        {!isOpen && (
+          <OpeningScreen onOpen={() => setIsOpen(true)} />
+        )}
+      </AnimatePresence>
     </>
   );
 }
