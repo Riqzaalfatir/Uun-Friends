@@ -222,7 +222,7 @@ const Hero = () => {
                                     </motion.div>
                     
                                     <img
-                                        src="/image/mentahan/Asap.gif"
+                                        src="/image/mentahan/asap.gif"
                                         alt="animasi"
                                         className="absolute w-[50px] h-auto top-[60%] md:top-[45.5%] lg:top-[75.5%] right-[64.5%] md:left-[26.5%] lg:left-[28.3%] z-50 opacity-50"
                                     />
