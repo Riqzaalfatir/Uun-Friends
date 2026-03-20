@@ -59,9 +59,9 @@ export default function OpeningScreen({ onOpen }: Props) {
 
                 <Image src="/image/hero/BGKUNING.png" alt="uun" width={165} height={160} className="absolute top-[34%] md:top-[23%] lg:top-[39.2%] right-[25%] md:right-[33.5%] lg:right-[30.6%] z-0 scale-[0.7] md:scale-100" />
 
-                <Image src="/image/mentahan/Mentahan-Cewe.png" alt="cewek" width={75} height={114} className="absolute top-[96%] md:top-[72%] lg:top-[36.1%] left-[33%] md:left-[41%] lg:left-[38.3%] z-10 scale-[0.6] md:scale-100" />
+                <Image src="/image/mentahan/Mentahan-Cewe.png" alt="cewek" width={63} height={114} className="absolute top-[96%] md:top-[72%] lg:top-[37%] left-[33%] md:left-[41%] lg:left-[38.3%] z-10 scale-[0.6] md:scale-100" />
 
-                <Image src="/image/mentahan/Mentahan-Cowo.png" alt="cowok" width={75} height={114} className="absolute top-[96%] md:top-[71%] lg:top-[35.1%] right-[25%] md:right-[36%] lg:right-[30.7%] z-10 scale-[0.6] md:scale-100" />
+                <Image src="/image/mentahan/Mentahan-Cowo.png" alt="cowok" width={58} height={114} className="absolute top-[96%] md:top-[71%] lg:top-[36%] right-[25%] md:right-[36%] lg:right-[30.7%] z-10 scale-[0.6] md:scale-100" />
 
                 <Image src="/image/mentahan/MentahanBakso.png" alt="bakso" width={280} height={355} className="absolute top-[161%] md:top-[108%] lg:top-[60%] right-[19%] md:left-[24%] lg:left-[12.1%] z-40 scale-[0.75] md:scale-100" />
 
@@ -69,30 +69,30 @@ export default function OpeningScreen({ onOpen }: Props) {
                     animate={{ rotate: [0, 3, -3, 0], y: [0, -2, 2, 0] }}
                     transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
                     style={{ transformOrigin: "center top" }}
-                    className="absolute top-[55%] md:top-[41%] lg:top-[58%] right-[57.5%] md:left-[13%] lg:left-[36.5%] z-40 w-[40px] md:w-[120px] lg:w-[140px] h-auto"
+                    className="absolute top-[55%] md:top-[41%] lg:top-[58.7%] right-[57.5%] md:left-[13%] lg:left-[36.3%] z-40 w-[40px] md:w-[120px] lg:w-[140px] h-auto"
                 >
-                    <Image src="/image/mentahan/MentahanKangBakso.png" alt="bakso" width={55} height={355} />
+                    <Image src="/image/mentahan/MentahanKangBakso.png" alt="bakso" width={50} height={355} />
                 </motion.div>
 
                 <motion.div
                     animate={{ rotate: [0, 3, -3, 0], y: [0, -2, 2, 0] }}
                     transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
                     style={{ transformOrigin: "center top" }}
-                    className="absolute top-[55%] md:top-[41%] lg:top-[32%] right-[57.5%] md:left-[13%] lg:left-[37.1%] z-20 w-[40px] md:w-[120px] lg:w-[140px] h-auto"
+                    className="absolute top-[55%] md:top-[41%] lg:top-[32%] right-[57.5%] md:left-[13%] lg:left-[36.7%] z-20 w-[40px] md:w-[120px]  h-auto"
                 >
-                    <Image src="/image/mentahan/Muka-Cewe.png" alt="bakso" width={77} height={355} />
+                    <Image src="/image/mentahan/Muka-Cewe.png" alt="bakso" width={71} height={355} />
                 </motion.div>
 
                 <motion.div
                     animate={{ rotate: [0, 3, -3, 0], y: [0, -2, 2, 0] }}
                     transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
                     style={{ transformOrigin: "center top" }}
-                    className="absolute top-[55%] md:top-[41%] lg:top-[29.5%] right-[57.5%] md:left-[13%] lg:left-[55.3%] z-20 w-[40px] md:w-[120px] h-auto"
+                    className="absolute top-[55%] md:top-[41%] lg:top-[31.3%] right-[57.5%] md:left-[13%] lg:left-[58.5%] z-20 w-[40px] md:w-[100px] h-auto"
                 >
-                    <Image src="/image/mentahan/Muka-Cowo.png" alt="bakso" width={65} height={355} />
+                    <Image src="/image/mentahan/Muka-Cowo.png" alt="bakso" width={50} height={355} />
                 </motion.div>
 
-                <img src="/image/mentahan/Asap.gif" alt="animasi" className="absolute w-[50px] h-auto top-[55%] md:top-[41%] lg:top-[65.5%] right-[57.5%] md:left-[13%] lg:left-[28.3%] z-50 opacity-50" />
+                <img src="/image/mentahan/asap.gif" alt="animasi" className="absolute w-[50px] h-auto top-[55%] md:top-[41%] lg:top-[65.5%] right-[57.5%] md:left-[13%] lg:left-[28.3%] z-50 opacity-50" />
 
                 <p className="absolute top-[280%] md:top-[200%] lg:top-[84.1%] left-1/2 -translate-x-1/2 text-[#F4ECA3] text-[35px] md:text-[55px] lg:text-[40px] font-barlow font-bold text-center scale-[0.9] md:scale-100 whitespace-nowrap">
                     JAJAN - MAIN - MAKAN
@@ -132,8 +132,8 @@ export default function OpeningScreen({ onOpen }: Props) {
                     <Image src="/image/hero/WAVE LINE KANAN ATAS.png" alt="wave" width={70} height={95} className="absolute top-[18%] md:top-[14%] left-[16%] md:left-[30%] z-10 -translate-x-1/2" />
                     <Image src="/image/hero/ZIG-ZAG LINE KANAN BAWAH.png" alt="zigzag" width={70} height={95} className="absolute top-[35%] md:top-[26%] left-[90%] md:left-[72.5%] -translate-x-1/2" />
 
-                    <Image src="/image/mentahan/Mentahan-Cewe.png" alt="cewek" width={55} height={114} className="absolute top-[35%] md:top-[26%] left-[47%] md:left-[46%] -translate-x-1/2 z-10" />
-                    <Image src="/image/mentahan/Mentahan-Cowo.png" alt="cowok" width={55} height={114} className="absolute top-[34%] md:top-[26%] left-[61%] md:left-[55%] -translate-x-1/2 z-10" />
+                    <Image src="/image/mentahan/Mentahan-Cewe.png" alt="cewek" width={55} height={114} className="absolute top-[34.5%] md:top-[26%] left-[45%] md:left-[46%] -translate-x-1/2 z-10 scale-[80%] md:size-22" />
+                    <Image src="/image/mentahan/Mentahan-Cowo.png" alt="cowok" width={50} height={114} className="absolute top-[34%] md:top-[26%] left-[61%] md:left-[55%] -translate-x-1/2 z-10 scale-[80%] md:size-22" />
                     <Image src="/image/hero/BGKUNING.png" alt="uun" width={90} height={160} className="absolute top-[33%] md:top-[28%] left-[52%] md:left-[52%] -translate-x-1/2 z-0" />
 
                     <Image src="/image/hero/GEROBAK BAKSO.png" alt="gerobak" width={160} height={210} className="absolute top-[40%] md:top-[30%] left-[6%] md:left-[24%] -translate-x-1/2" />
@@ -151,7 +151,7 @@ export default function OpeningScreen({ onOpen }: Props) {
                             ease: "easeInOut"
                         }}
                         style={{ transformOrigin: "center top" }}
-                        className="absolute top-[49%] md:top-[37%] lg:top-[58%] right-[58%] md:left-[38%] lg:left-[36.5%] z-40 w-[33px] md:w-[35px] lg:w-[120px] h-auto"
+                        className="absolute top-[49.1%] md:top-[37%] lg:top-[58%] right-[59%] md:left-[38%] lg:left-[36.5%] z-40 w-[30px] md:w-[35px] lg:w-[120px] h-auto"
                     >
                         <Image
                             src="/image/mentahan/MentahanKangBakso.png"
@@ -172,7 +172,7 @@ export default function OpeningScreen({ onOpen }: Props) {
                             ease: "easeInOut"
                         }}
                         style={{ transformOrigin: "center top" }}
-                        className="absolute top-[31%] md:top-[22%] lg:top-[32%] right-[45.5%] md:left-[40.7%] lg:left-[37.1%] z-20 w-[58px] md:w-[60px] lg:w-[120px] h-auto"
+                        className="absolute top-[32%] md:top-[24%] lg:top-[32%] right-[48.9%] md:left-[41.8%] lg:left-[37.1%] z-20 w-[50px] md:w-[50px]  h-auto"
                     >
                         <Image
                             src="/image/mentahan/Muka-Cewe.png"
@@ -193,7 +193,7 @@ export default function OpeningScreen({ onOpen }: Props) {
                             ease: "easeInOut"
                         }}
                         style={{ transformOrigin: "center top" }}
-                        className="absolute top-[29%] md:top-[22%] lg:top-[29.5%] right-[32.5%] md:left-[51%] lg:left-[55.3%] z-20 w-[48px] md:w-[50px] lg:w-[120px] h-auto"
+                        className="absolute top-[32%] md:top-[24%] lg:top-[29.5%] right-[34.3%] md:left-[52%] lg:left-[55.3%] z-20 w-[34px] md:w-[38px] lg:w-[120px] h-auto"
                     >
                         <Image
                             src="/image/mentahan/Muka-Cowo.png"

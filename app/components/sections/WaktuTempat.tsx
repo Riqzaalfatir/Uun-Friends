@@ -62,9 +62,7 @@ const WaktuTempat = () => {
           
           <motion.div variants={fadeLeft}>
             <h2 className="text-[#EB621F] font-barlow font-bold text-[40px] leading-[100%] sm:text-[52px] md:text-[60px] lg:text-[80px] uppercase">
-              JANJIAN
-              <span className="md:block">TANGGAL &</span>
-              <span className="md:block">TEMPATNYA</span>
+              JANJIAN <span className="inline md:block">TANGGAL &</span> <span className="md:block">TEMPATNYA</span>
             </h2>
           </motion.div>
 
@@ -77,7 +75,7 @@ const WaktuTempat = () => {
               >
                 <motion.p
                   variants={fadeUp}
-                  className="font-barlow font-bold text-[24px] sm:text-[18px] md:text-[18px] lg:text-[24px] leading-[130%] uppercase"
+                  className="font-barlow font-bold text-[24px] sm:text-[18px] md:text-[18px] lg:text-[24px] leading-[130%] uppercase text-black"
                 >
                   SENIN, 6 APRIL TAHUN INI
                   <span className="block">
@@ -89,10 +87,10 @@ const WaktuTempat = () => {
                 </motion.p>
 
                 <motion.div variants={fadeUp}>
-                  <p className="font-barlow font-bold text-[24px] sm:text-[18px] md:text-[18px] lg:text-[24px] leading-[130%] uppercase">
+                  <p className="font-barlow font-bold text-[24px] sm:text-[18px] md:text-[18px] lg:text-[24px] leading-[130%] uppercase text-black">
                     PARK VIEW BCC
                   </p>
-                  <p className="font-source text-[16px] md:text-[15px] leading-[140%] pt-1">
+                  <p className="font-source text-[16px] md:text-[15px] leading-[140%] pt-1 text-black">
                     Jl. Soekarno Hatta No.354, Bandung
                   </p>
                 </motion.div>

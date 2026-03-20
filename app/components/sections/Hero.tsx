@@ -57,7 +57,7 @@ const Hero = () => {
                         alt="uun"
                         width={165}
                         height={160}
-                        className="absolute top-[34%] md:top-[23%] lg:top-[50.2%] right-[25%] md:right-[33.5%] lg:right-[30.6%] z-0 scale-[0.7] md:scale-100"
+                        className="absolute top-[34%] md:top-[23%] lg:top-[50.2%] right-[26.5%] md:right-[33.5%] lg:right-[30.6%] z-0 scale-[0.7] md:scale-100"
                     />
 
                     <Image
@@ -103,17 +103,17 @@ const Hero = () => {
                     <Image
                         src="/image/mentahan/Mentahan-Cewe.png"
                         alt="cewek"
-                        width={70}
+                        width={60}
                         height={114}
-                        className="absolute top-[30%] md:top-[20%] lg:top-[47.1%] left-[37%] md:left-[40%] lg:left-[40.3%] z-10 scale-[0.6] md:scale-100"
+                        className="absolute top-[33%] md:top-[22%] lg:top-[47.1%] left-[35%] md:left-[40%] lg:left-[40.3%] z-10 scale-[0.6] md:scale-100"
                     />
 
                     <Image
                         src="/image/mentahan/Mentahan-Cowo.png"
                         alt="cowok"
-                        width={70}
+                        width={60}
                         height={114}
-                        className="absolute top-[29%] md:top-[19%] lg:top-[45.1%] right-[30%] md:right-[34%] lg:right-[30.7%] z-10 scale-[0.6] md:scale-100"
+                        className="absolute top-[32%] md:top-[21%] lg:top-[46.1%] right-[32%] md:right-[34%] lg:right-[30.7%] z-10 scale-[0.6] md:scale-100"
                     />
 
                     <Image
@@ -135,12 +135,12 @@ const Hero = () => {
                             ease: "easeInOut"
                         }}
                         style={{ transformOrigin: "center top" }}
-                        className="absolute top-[55%] md:top-[40%] lg:top-[68%] right-[57.5%] md:left-[33%] lg:left-[36%] z-40 w-[40px] md:w-[120px] lg:w-[140px] h-auto"
+                        className="absolute top-[55.9%] md:top-[40%] lg:top-[68.5%] right-[59.2%] md:left-[33%] lg:left-[36.2%] z-40 w-[37px] md:w-[120px] lg:w-[140px] h-auto"
                     >
                         <Image
                             src="/image/mentahan/MentahanKangBakso.png"
                             alt="bakso"
-                            width={55}
+                            width={50}
                             height={355}
                         />
                     </motion.div>
@@ -156,9 +156,9 @@ const Hero = () => {
                                 ease: "easeInOut"
                                 }}
                                 style={{ transformOrigin: "center top" }}
-                                className="absolute top-[32%] md:top-[16%] lg:top-[41%] right-[48.5%] md:left-[38.9%] lg:left-[38.6%] z-20 w-[44px] md:w-[120px] lg:w-[140px] h-auto"
+                                className="absolute top-[33%] md:top-[18%] lg:top-[42%] right-[51.2%] md:left-[38.7%] lg:left-[38.9%] z-20 w-[44px] md:w-[120px] lg:w-[120px] h-auto"
                                 >
-                        <Image  src="/image/mentahan/Muka-Cewe.png" alt="bakso" width={77}  height={355} />
+                        <Image  src="/image/mentahan/Muka-Cewe.png" alt="bakso" width={66}  height={355} />
                     </motion.div>
                     
                     <motion.div
@@ -172,8 +172,8 @@ const Hero = () => {
                                 ease: "easeInOut"
                                     }}
                             style={{ transformOrigin: "center top" }}
-                            className="absolute top-[29%] md:top-[15%] lg:top-[38.5%] right-[33.5%] md:left-[54.8%] lg:left-[55.8%] z-20 w-[40px] md:w-[120px] h-auto">
-                        <Image src="/image/mentahan/Muka-Cowo.png" alt="bakso"  width={65}  height={355} />
+                            className="absolute top-[32%] md:top-[17.5%] lg:top-[42%] right-[35.8%] md:left-[56.8%] lg:left-[58.3%] z-20 w-[32px] md:w-[120px] h-auto">
+                        <Image src="/image/mentahan/Muka-Cowo.png" alt="bakso"  width={50}  height={355} />
                     </motion.div>
                     
                     <img src="/image/mentahan/asap.gif" alt="animasi"

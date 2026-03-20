@@ -81,7 +81,7 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
               alt="uun"
               width={165}
               height={160}
-              className="absolute top-[34%] md:top-[16%] lg:top-[40.2%] right-[25%] md:right-[36.5%] lg:right-[35.6%] z-0 scale-[0.7] md:scale-100"
+              className="absolute top-[34%] md:top-[16%] lg:top-[40.2%] right-[27%] md:right-[37.5%] lg:right-[35.6%] z-0 scale-[0.7] md:scale-100"
             />
 
             {/* ILUSTRASI */}
@@ -131,17 +131,17 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
             <Image
               src="/image/mentahan/Mentahan-Cewe.png"
               alt="cewek"
-              width={80}
+              width={65}
               height={114}
-              className="absolute top-[30%] md:top-[15%] lg:top-[39.1%] left-[36%] md:left-[40%] lg:left-[41%] z-10 scale-[0.5] md:scale-100"
+              className="absolute top-[30%] md:top-[15%] lg:top-[40%] left-[34%] md:left-[40%] lg:left-[41%] z-10 scale-[0.5] md:scale-100"
             />
 
             <Image
               src="/image/mentahan/Mentahan-Cowo.png"
               alt="cowok"
-              width={80}
+              width={65}
               height={114}
-              className="absolute top-[28%] md:top-[14%] lg:top-[39.1%] right-[28.2%] md:right-[34%] lg:right-[33.7%] z-10 scale-[0.6] md:scale-100"
+              className="absolute top-[29%] md:top-[14%] lg:top-[39%] right-[33%] md:right-[38%] lg:right-[37.7%] z-10 scale-[0.6] md:scale-100"
             />
 
             <Image
@@ -164,12 +164,12 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
                 ease: "easeInOut"
               }}
               style={{ transformOrigin: "center top" }}
-              className="absolute top-[55%] md:top-[33%] lg:top-[56%] right-[57.5%] md:left-[35%] lg:left-[36.5%] z-40 w-[40px] md:w-[120px] lg:w-[140px] h-auto"
+              className="absolute top-[55.9%] md:top-[33%] lg:top-[56%] right-[59.5%] md:left-[35.4%] lg:left-[36.5%] z-40 w-[35px] md:w-[120px] lg:w-[140px] h-auto"
             >
               <Image
                 src="/image/mentahan/MentahanKangBakso.png"
                 alt="bakso"
-                width={55}
+                width={50}
                 height={355}
               />
             </motion.div>
@@ -186,12 +186,12 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
                                                         ease: "easeInOut"
                                                     }}
                                                     style={{ transformOrigin: "center top" }}
-                                                    className="absolute top-[32%] md:top-[12%] lg:top-[37%] right-[48.5%] md:left-[39.3%] lg:left-[40.6%] z-20 w-[44px] md:w-[120px] lg:w-[140px] h-auto"
+                                                    className="absolute top-[32%] md:top-[11%] lg:top-[36%] right-[52%] md:left-[38.9%] lg:left-[39.9%] z-20 w-[40px] md:w-[120px] lg:w-[140px] h-auto"
                                                 >
                                                     <Image
                                                         src="/image/mentahan/Muka-Cewe.png"
-                                                        alt="bakso"
-                                                        width={79}
+                                                        alt="Muka Cewe"
+                                                        width={72}
                                                         height={355}
                                                     />
                                                 </motion.div>
@@ -208,12 +208,12 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
                                                         ease: "easeInOut"
                                                     }}
                                                     style={{ transformOrigin: "center top" }}
-                                                    className="absolute top-[29%] md:top-[10%] lg:top-[35.5%] right-[33.5%] md:left-[55.6%] lg:left-[55.8%] z-20 w-[40px] md:w-[120px] h-auto"
+                                                    className="absolute top-[30.5%] md:top-[10.5%] lg:top-[35.9%] right-[37.8%] md:left-[53.5%] lg:left-[53.7%] z-20 w-[32px] md:w-[100px] h-auto"
                                                 >
                                                     <Image
                                                         src="/image/mentahan/Muka-Cowo.png"
-                                                        alt="bakso"
-                                                        width={65}
+                                                        alt="Muka Cowo"
+                                                        width={54}
                                                         height={355}
                                                     />
                                                 </motion.div>
