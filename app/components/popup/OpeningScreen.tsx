@@ -133,7 +133,7 @@ export default function OpeningScreen({ onOpen }: Props) {
                     <Image src="/image/hero/ZIG-ZAG LINE KANAN BAWAH.png" alt="zigzag" width={70} height={95} className="absolute top-[35%] md:top-[26%] left-[90%] md:left-[72.5%] -translate-x-1/2" />
 
                     <Image src="/image/mentahan/Mentahan-Cewe.png" alt="cewek" width={55} height={114} className="absolute top-[34.5%] md:top-[26%] left-[45%] md:left-[46%] -translate-x-1/2 z-10 scale-[80%] md:size-22" />
-                    <Image src="/image/mentahan/Mentahan-Cowo.png" alt="cowok" width={50} height={114} className="absolute top-[34%] md:top-[26%] left-[61%] md:left-[55%] -translate-x-1/2 z-10 scale-[76%] md:size-22" />
+                    <Image src="/image/mentahan/Mentahan-Cowo.png" alt="cowok" width={50} height={114} className="absolute top-[34%] md:top-[26%] left-[61%] md:left-[55%] -translate-x-1/2 z-10 scale-[73%] md:size-22" />
                     <Image src="/image/hero/BGKUNING.png" alt="uun" width={90} height={160} className="absolute top-[33%] md:top-[28%] left-[52%] md:left-[52%] -translate-x-1/2 z-0" />
 
                     <Image src="/image/hero/GEROBAK BAKSO.png" alt="gerobak" width={160} height={210} className="absolute top-[40%] md:top-[30%] left-[6%] md:left-[24%] -translate-x-1/2" />
@@ -193,7 +193,7 @@ export default function OpeningScreen({ onOpen }: Props) {
                             ease: "easeInOut"
                         }}
                         style={{ transformOrigin: "center top" }}
-                        className="absolute top-[32%] md:top-[24%] lg:top-[29.5%] right-[34.3%] md:left-[52%] lg:left-[55.3%] z-20 w-[34px] md:w-[38px] lg:w-[120px] h-auto"
+                        className="absolute top-[32%] md:top-[24%] lg:top-[29.5%] right-[34.1%] md:left-[52%] lg:left-[55.3%] z-20 w-[34px] md:w-[38px] lg:w-[120px] h-auto"
                     >
                         <Image
                             src="/image/mentahan/Muka-Cowo.png"
