@@ -164,10 +164,10 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
                 ease: "easeInOut"
               }}
               style={{ transformOrigin: "center top" }}
-              className="absolute top-[55.5%] md:top-[33%] lg:top-[56%] right-[57.9%] md:left-[35.4%] lg:left-[36.5%] z-40 w-[35px] md:w-[120px] lg:w-[140px] h-auto"
+              className="absolute top-[55.5%] md:top-[33%] lg:top-[56%] right-[57.5%] md:left-[35.4%] lg:left-[36.5%] z-40 w-[37px] md:w-[120px] lg:w-[140px] h-auto"
             >
               <Image
-                src="/image/mentahan/MentahanKangBakso.png"
+                src="/image/mentahan/MentahanKangBakso.svg"
                 alt="bakso"
                 width={50}
                 height={355}
@@ -186,12 +186,12 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
                                                         ease: "easeInOut"
                                                     }}
                                                     style={{ transformOrigin: "center top" }}
-                                                    className="absolute top-[32%] md:top-[11%] lg:top-[36%] right-[53%] md:left-[38.9%] lg:left-[39.9%] z-20 w-[40px] md:w-[120px] lg:w-[140px] h-auto"
+                                                    className="absolute top-[32%] md:top-[11%] lg:top-[36.5%] right-[52%] md:left-[38.9%] lg:left-[39.6%] z-20 w-[40px] md:w-[120px] lg:w-[145px] h-auto"
                                                 >
                                                     <Image
-                                                        src="/image/mentahan/Muka-Cewe.png"
+                                                        src="/image/mentahan/Muka-Cewe.svg"
                                                         alt="Muka Cewe"
-                                                        width={72}
+                                                        width={75}
                                                         height={355}
                                                     />
                                                 </motion.div>
@@ -211,7 +211,7 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
                                                     className="absolute top-[30%] md:top-[10.5%] lg:top-[35.9%] right-[37.4%] md:left-[53.5%] lg:left-[53.7%] z-20 w-[33px] md:w-[100px] h-auto"
                                                 >
                                                     <Image
-                                                        src="/image/mentahan/Muka-Cowo.png"
+                                                        src="/image/mentahan/Muka-Cowo.svg"
                                                         alt="Muka Cowo"
                                                         width={54}
                                                         height={355}

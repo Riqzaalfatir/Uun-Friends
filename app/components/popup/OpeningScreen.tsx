@@ -151,10 +151,10 @@ export default function OpeningScreen({ onOpen }: Props) {
                             ease: "easeInOut"
                         }}
                         style={{ transformOrigin: "center top" }}
-                        className="absolute top-[49.1%] md:top-[37%] lg:top-[58%] right-[59%] md:left-[38%] lg:left-[36.5%] z-40 w-[30px] md:w-[35px] lg:w-[120px] h-auto"
+                        className="absolute top-[49.1%] md:top-[37%] lg:top-[58%] right-[58.8%] md:left-[38%] lg:left-[36.5%] z-40 w-[30px] md:w-[35px] lg:w-[120px] h-auto"
                     >
                         <Image
-                            src="/image/mentahan/MentahanKangBakso.png"
+                            src="/image/mentahan/MentahanKangBakso.svg"
                             alt="bakso"
                             width={55}
                             height={355}
@@ -172,10 +172,10 @@ export default function OpeningScreen({ onOpen }: Props) {
                             ease: "easeInOut"
                         }}
                         style={{ transformOrigin: "center top" }}
-                        className="absolute top-[32.8%] md:top-[24%] lg:top-[32%] right-[48.9%] md:left-[41.8%] lg:left-[37.1%] z-20 w-[49px] md:w-[50px]  h-auto"
+                        className="absolute top-[32.8%] md:top-[25%] lg:top-[32%] right-[48.9%] md:left-[41.8%] lg:left-[37.1%] z-20 w-[49px] md:w-[50px]  h-auto"
                     >
                         <Image
-                            src="/image/mentahan/Muka-Cewe.png"
+                            src="/image/mentahan/Muka-Cewe.svg"
                             alt="bakso"
                             width={77}
                             height={355}
@@ -193,10 +193,10 @@ export default function OpeningScreen({ onOpen }: Props) {
                             ease: "easeInOut"
                         }}
                         style={{ transformOrigin: "center top" }}
-                        className="absolute top-[32%] md:top-[24%] lg:top-[29.5%] right-[34.1%] md:left-[52%] lg:left-[55.3%] z-20 w-[34px] md:w-[38px] lg:w-[120px] h-auto"
+                        className="absolute top-[32%] md:top-[24%] lg:top-[29.5%] right-[34.1%] md:left-[52%] lg:left-[55.3%] z-20 w-[36px] md:w-[38px] lg:w-[120px] h-auto"
                     >
                         <Image
-                            src="/image/mentahan/Muka-Cowo.png"
+                            src="/image/mentahan/Muka-Cowo.svg"
                             alt="bakso"
                             width={65}
                             height={355}

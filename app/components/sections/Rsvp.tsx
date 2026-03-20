@@ -85,10 +85,10 @@ const Rsvp = () => {
                     <motion.div variants={fadeRight} className="flex flex-col gap-6">
 
                         <motion.div variants={fadeUp}>
-                            <h3 className="font-barlow font-bold text-[25px] leading-[120%] mb-1">
+                            <h3 className="font-barlow font-bold text-[25px] leading-[120%] mb-1 text-black">
                                 John Doe
                             </h3>
-                            <p className="text-[15px] max-w-[350px] font-source ">
+                            <p className="text-[15px] max-w-[350px] font-source text-black ">
                                 Daftar dulu ya, biar jajanannya siap nungguin kamu.
                                 Jangan lewat dari Rabu, 14 Januari 2026.
                             </p>
@@ -117,7 +117,7 @@ const Rsvp = () => {
 
                         {/* COUNTER */}
                         <motion.div variants={fadeUp} className="flex flex-col lg:flex-row items-start lg:items-center gap-1 md:gap-4 mt-2">
-                            <p className="text-[16px] font-source text-left">
+                            <p className="text-[16px] font-source text-left text-black">
                                 Datang berapa orang?
                             </p>
 
@@ -154,7 +154,7 @@ const Rsvp = () => {
 
                         {/* CONTACT */}
                         <motion.div variants={fadeUp} className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 mt-2">
-                            <p className="text-[15px] font-source">
+                            <p className="text-[15px] font-source text-black">
                                 Jika ada kendala pada RSVP, silakan hubungi Tim Provite.
                             </p>
 
