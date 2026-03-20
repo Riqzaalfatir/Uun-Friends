@@ -219,7 +219,7 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
                                                 </motion.div>
                                 
                                                 <img
-                                                    src="/image/mentahan/Asap.gif"
+                                                    src="/image/mentahan/asap.gif"
                                                     alt="animasi"
                                                     className="absolute w-[50px] h-auto top-[60%] md:top-[38%] lg:top-[60.8%] right-[64.5%] md:left-[29%] lg:left-[30.3%] z-50 opacity-50"
                                                 />
