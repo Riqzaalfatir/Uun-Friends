@@ -125,7 +125,7 @@ export default function OpeningScreen({ onOpen }: Props) {
                     </div>
 
                     <Image src="/image/hero/JAJAN.png" alt="jajan" width={240} height={200} className="absolute top-[8%] md:top-[8%] left-1/2 -translate-x-1/2" />
-                    <Image src="/image/hero/BARENG.png" alt="bareng" width={300} height={200} className="absolute top-[24%] md:top-[19%] left-1/2 -translate-x-1/2" />
+                    <Image src="/image/hero/BARENG.png" alt="bareng" width={300} height={200} className="absolute top-[24%] md:top-[19%] left-1/2 -translate-x-1/2 z-10"  />
                     <Image src="/image/hero/UUN text.png" alt="uun" width={160} height={160} className="absolute top-[37%] md:top-[29%] left-[47%] md:left-[48%] z-30 -translate-x-1/2" />
 
                     <Image src="/image/hero/VOLUME 2.png" alt="volume" width={70} height={95} className="absolute top-[5%] md:top-[7%] left-[76%] md:left-[66%] z-10 -translate-x-1/2" />
