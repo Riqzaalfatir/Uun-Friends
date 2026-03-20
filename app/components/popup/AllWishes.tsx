@@ -164,7 +164,7 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
                 ease: "easeInOut"
               }}
               style={{ transformOrigin: "center top" }}
-              className="absolute top-[55.9%] md:top-[33%] lg:top-[56%] right-[59.5%] md:left-[35.4%] lg:left-[36.5%] z-40 w-[35px] md:w-[120px] lg:w-[140px] h-auto"
+              className="absolute top-[55.5%] md:top-[33%] lg:top-[56%] right-[58%] md:left-[35.4%] lg:left-[36.5%] z-40 w-[35px] md:w-[120px] lg:w-[140px] h-auto"
             >
               <Image
                 src="/image/mentahan/MentahanKangBakso.png"
@@ -186,7 +186,7 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
                                                         ease: "easeInOut"
                                                     }}
                                                     style={{ transformOrigin: "center top" }}
-                                                    className="absolute top-[32%] md:top-[11%] lg:top-[36%] right-[52%] md:left-[38.9%] lg:left-[39.9%] z-20 w-[40px] md:w-[120px] lg:w-[140px] h-auto"
+                                                    className="absolute top-[32%] md:top-[11%] lg:top-[36%] right-[53%] md:left-[38.9%] lg:left-[39.9%] z-20 w-[40px] md:w-[120px] lg:w-[140px] h-auto"
                                                 >
                                                     <Image
                                                         src="/image/mentahan/Muka-Cewe.png"
@@ -208,7 +208,7 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
                                                         ease: "easeInOut"
                                                     }}
                                                     style={{ transformOrigin: "center top" }}
-                                                    className="absolute top-[30.5%] md:top-[10.5%] lg:top-[35.9%] right-[37.8%] md:left-[53.5%] lg:left-[53.7%] z-20 w-[32px] md:w-[100px] h-auto"
+                                                    className="absolute top-[30.5%] md:top-[10.5%] lg:top-[35.9%] right-[37.4%] md:left-[53.5%] lg:left-[53.7%] z-20 w-[32px] md:w-[100px] h-auto"
                                                 >
                                                     <Image
                                                         src="/image/mentahan/Muka-Cowo.png"

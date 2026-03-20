@@ -135,7 +135,7 @@ const Hero = () => {
                             ease: "easeInOut"
                         }}
                         style={{ transformOrigin: "center top" }}
-                        className="absolute top-[55.9%] md:top-[40%] lg:top-[68.5%] right-[59.2%] md:left-[33%] lg:left-[36.2%] z-40 w-[37px] md:w-[120px] lg:w-[140px] h-auto"
+                        className="absolute top-[55.7%] md:top-[40%] lg:top-[68.5%] right-[57.7%] md:left-[33%] lg:left-[36.2%] z-40 w-[37px] md:w-[120px] lg:w-[140px] h-auto"
                     >
                         <Image
                             src="/image/mentahan/MentahanKangBakso.png"
@@ -156,7 +156,7 @@ const Hero = () => {
                                 ease: "easeInOut"
                                 }}
                                 style={{ transformOrigin: "center top" }}
-                                className="absolute top-[33%] md:top-[18%] lg:top-[42%] right-[51.2%] md:left-[38.7%] lg:left-[38.9%] z-20 w-[44px] md:w-[120px] lg:w-[120px] h-auto"
+                                className="absolute top-[33%] md:top-[18%] lg:top-[42%] right-[51.9%] md:left-[38.7%] lg:left-[38.9%] z-20 w-[44px] md:w-[120px] lg:w-[120px] h-auto"
                                 >
                         <Image  src="/image/mentahan/Muka-Cewe.png" alt="bakso" width={66}  height={355} />
                     </motion.div>
@@ -172,7 +172,7 @@ const Hero = () => {
                                 ease: "easeInOut"
                                     }}
                             style={{ transformOrigin: "center top" }}
-                            className="absolute top-[32%] md:top-[17.5%] lg:top-[42%] right-[35.8%] md:left-[56.8%] lg:left-[58.3%] z-20 w-[32px] md:w-[120px] h-auto">
+                            className="absolute top-[32.3%] md:top-[17.5%] lg:top-[42%] right-[35.3%] md:left-[56.8%] lg:left-[58.3%] z-20 w-[33px] md:w-[120px] h-auto">
                         <Image src="/image/mentahan/Muka-Cowo.png" alt="bakso"  width={50}  height={355} />
                     </motion.div>
                     
