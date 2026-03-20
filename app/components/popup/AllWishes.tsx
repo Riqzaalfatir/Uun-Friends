@@ -186,7 +186,7 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
                                                         ease: "easeInOut"
                                                     }}
                                                     style={{ transformOrigin: "center top" }}
-                                                    className="absolute top-[32%] md:top-[11%] lg:top-[36.5%] right-[52%] md:left-[38.9%] lg:left-[39.6%] z-20 w-[40px] md:w-[120px] lg:w-[145px] h-auto"
+                                                    className="absolute top-[32%] md:top-[11%] lg:top-[36.5%] right-[52%] md:left-[38.9%] lg:left-[39.6%] z-20 w-[45px] md:w-[120px] lg:w-[145px] h-auto"
                                                 >
                                                     <Image
                                                         src="/image/mentahan/Muka-Cewe.svg"
