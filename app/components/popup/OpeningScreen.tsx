@@ -172,7 +172,7 @@ export default function OpeningScreen({ onOpen }: Props) {
                             ease: "easeInOut"
                         }}
                         style={{ transformOrigin: "center top" }}
-                        className="absolute top-[32.4%] md:top-[24%] lg:top-[32%] right-[49.2%] md:left-[41.8%] lg:left-[37.1%] z-20 w-[47px] md:w-[50px]  h-auto"
+                        className="absolute top-[32%] md:top-[24%] lg:top-[32%] right-[49.3%] md:left-[41.8%] lg:left-[37.1%] z-20 w-[48px] md:w-[50px]  h-auto"
                     >
                         <Image
                             src="/image/mentahan/Muka-Cewe.png"
@@ -193,7 +193,7 @@ export default function OpeningScreen({ onOpen }: Props) {
                             ease: "easeInOut"
                         }}
                         style={{ transformOrigin: "center top" }}
-                        className="absolute top-[32%] md:top-[24%] lg:top-[29.5%] right-[34.7%] md:left-[52%] lg:left-[55.3%] z-20 w-[33px] md:w-[38px] lg:w-[120px] h-auto"
+                        className="absolute top-[32%] md:top-[24%] lg:top-[29.5%] right-[34.6%] md:left-[52%] lg:left-[55.3%] z-20 w-[33px] md:w-[38px] lg:w-[120px] h-auto"
                     >
                         <Image
                             src="/image/mentahan/Muka-Cowo.png"
