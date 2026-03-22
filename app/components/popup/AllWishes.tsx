@@ -51,7 +51,6 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
               </button>
             </div>
 
-            {/* TEXT */}
             <Image
               src="/image/hero/JAJAN.png"
               alt="jajan"
@@ -84,7 +83,6 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
               className="absolute top-[34%] md:top-[16%] lg:top-[40.2%] right-[27%] md:right-[37.5%] lg:right-[35.6%] z-0 scale-[0.7] md:scale-100"
             />
 
-            {/* ILUSTRASI */}
             <Image
               src="/image/hero/VOLUME 2.png"
               alt="volume"
@@ -93,7 +91,6 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
               className="absolute -top-[13%] md:-top-[20%] lg:top-[5%] left-[70%] md:left-[66%] lg:left-[65%] scale-[0.8] md:scale-100"
             />
 
-            {/* WAVE */}
             <Image
               src="/image/hero/WAVE LINE KANAN ATAS.png"
               alt="wave"
@@ -102,7 +99,6 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
               className="absolute top-[8%] md:-top-[7%] lg:top-[19.4%] right-[78%] md:right-[72%] lg:right-[72%] scale-[0.7] md:scale-100"
             />
 
-            {/* ZIGZAG */}
             <Image
               src="/image/hero/ZIG-ZAG LINE KANAN BAWAH.png"
               alt="zigzag"
@@ -127,7 +123,6 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
               className="absolute top-[31%] md:top-[17%] lg:top-[41%] left-[54%] md:left-[64%] lg:left-[62.5%] scale-[0.8] md:scale-100"
             />
 
-            {/* ORANG */}
             <Image
               src="/image/mentahan/Mentahan-Cewe.png"
               alt="cewek"
@@ -164,7 +159,7 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
                 ease: "easeInOut",
               }}
               style={{ transformOrigin: "center bottom" }}
-              className="absolute top-[55%] md:top-[33%] lg:top-[55.5%] right-[58.6%] md:left-[35.4%] lg:left-[36.3%] z-40 w-[39px] md:w-[120px] lg:w-[140px] h-auto"
+              className="absolute top-[54.5%] md:top-[33%] lg:top-[55.5%] right-[56.5%] md:left-[35.4%] lg:left-[36.3%] z-40 w-[42px] md:w-[120px] lg:w-[140px] h-auto"
             >
               <Image
                 src="/image/mentahan/MentahanKangBakso.svg"
@@ -186,7 +181,7 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
                 ease: "easeInOut",
               }}
               style={{ transformOrigin: "center bottom" }}
-              className="absolute top-[30.5%] md:top-[10%] lg:top-[35%] right-[51.1%] md:left-[38.2%] lg:left-[39.2%] z-20 w-[47px] md:w-[120px] lg:w-[145px] h-auto"
+              className="absolute top-[30.5%] md:top-[10%] lg:top-[35%] right-[51.8%] md:left-[38.2%] lg:left-[39.2%] z-20 w-[48px] md:w-[120px] lg:w-[145px] h-auto"
             >
               <Image
                 src="/image/mentahan/Muka-Cewe.svg"
@@ -208,7 +203,7 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
                 ease: "easeInOut",
               }}
               style={{ transformOrigin: "center bottom" }}
-              className="absolute top-[29.5%] md:top-[10.5%] lg:top-[35%] right-[37.3%] md:left-[53%] lg:left-[53.4%] z-20 w-[36px] md:w-[100px] h-auto"
+              className="absolute top-[29.5%] md:top-[10.5%] lg:top-[35%] right-[36.7%] md:left-[53%] lg:left-[53.4%] z-20 w-[37px] md:w-[100px] h-auto"
             >
               <Image
                 src="/image/mentahan/Muka-Cowo.svg"
@@ -226,7 +221,6 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
             />
 
 
-            {/* TEXT BAWAH */}
             <p
               className="absolute top-[100%] md:top-[100%] lg:top-[79.1%] left-1/2 -translate-x-1/2 text-[#F4ECA3] text-[35px] md:text-[55px] lg:text-[40px] font-barlow font-bold text-center scale-[0.9] md:scale-100 whitespace-nowrap"
             >
@@ -239,7 +233,6 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
 
 
 
-          {/* HEADER (GA IKUT SCROLL) */}
           <h2 className="text-[#EB621F] font-barlow font-bold text-[26px] lg:text-[28px] mb-4">
             DOA DAN HARAPAN TEMAN-TEMAN
           </h2>
@@ -255,7 +248,6 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
             <FiSearch className="absolute right-4 top-1/2 -translate-y-1/2 text-[#EB621F] text-lg" />
           </div>
 
-          {/* SCROLL AREA */}
           <div className="flex-1 overflow-y-auto pr-2 no-scrollbar">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {filteredPesan.length > 0 ? (
@@ -274,7 +266,6 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
             </div>
           </div>
 
-          {/* FOOTER */}
           <div className="flex justify-center pt-4 z-20">
             <Image
               src="/image/footer/Provite Logo2.png"

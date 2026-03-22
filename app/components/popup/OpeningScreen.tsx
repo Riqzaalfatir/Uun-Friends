@@ -108,7 +108,7 @@ export default function OpeningScreen({ onOpen }: Props) {
                         ease: "easeInOut",
                     }}
                     style={{ transformOrigin: "center bottom" }}
-                    className="absolute top-[55%] md:top-[41%] lg:top-[31%] right-[57.5%] md:left-[13%] lg:left-[58.2%] z-20 w-[40px] md:w-[100px] h-auto"
+                    className="absolute top-[55%] md:top-[41%] lg:top-[31%] right-[57.5%] md:left-[13%] lg:left-[58.1%] z-20 w-[40px] md:w-[100px] h-auto"
                 >
                     <Image src="/image/mentahan/Muka-Cowo.svg" alt="bakso" width={53} height={355} />
                 </motion.div>
@@ -193,7 +193,7 @@ export default function OpeningScreen({ onOpen }: Props) {
                             ease: "easeInOut",
                         }}
                         style={{ transformOrigin: "center bottom" }}
-                        className="absolute top-[30.9%] md:top-[24%] lg:top-[32%] right-[48.5%] md:left-[41%] lg:left-[37.1%] z-20 w-[55px] md:w-[55px]  h-auto"
+                        className="absolute top-[30.9%] md:top-[24%] lg:top-[32%] right-[48.2%] md:left-[41%] lg:left-[37.1%] z-20 w-[55px] md:w-[55px]  h-auto"
                     >
                         <Image
                             src="/image/mentahan/Muka-Cewe.svg"

@@ -102,14 +102,12 @@ Mohon maaf dan terima kasih atas undangannya.`;
             >
                 <div className="grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-7 md:gap-10 items-center">
 
-                    {/* TITLE */}
                     <motion.div variants={fadeLeft}>
                         <h2 className="text-[#EB621F] font-barlow font-bold text-[40px] md:text-[60px] lg:text-[80px] leading-[100%] uppercase">
                             DATANG <span className="md:block"> NGGAK NIH?</span>
                         </h2>
                     </motion.div>
 
-                    {/* CONTENT */}
                     <motion.div variants={fadeRight} className="flex flex-col gap-6">
 
                         <motion.div variants={fadeUp}>
@@ -122,10 +120,9 @@ Mohon maaf dan terima kasih atas undangannya.`;
                             </p>
                         </motion.div>
 
-                        {/* BUTTONS */}
                         <motion.div variants={fadeUp} className="flex gap-2">
                             <motion.button
-                                onClick={() => setIsTidak(false)} // ✅ balik ke datang
+                                onClick={() => setIsTidak(false)}
                                 whileHover={{ scale: 1.03 }}
                                 whileTap={{ scale: 0.97 }}
                                 transition={{ duration: 0.2 }}
@@ -138,7 +135,7 @@ Mohon maaf dan terima kasih atas undangannya.`;
                             </motion.button>
 
                             <motion.button
-                                onClick={() => setIsTidak(true)} // ✅ ke tidak datang
+                                onClick={() => setIsTidak(true)} 
 
                                 whileHover={{ scale: 1.03 }}
                                 whileTap={{ scale: 0.97 }}
@@ -153,7 +150,6 @@ Mohon maaf dan terima kasih atas undangannya.`;
 
                         </motion.div>
 
-                        {/* COUNTER */}
                         {!isTidak && (
                             <>
                                 <motion.div variants={fadeUp} className="flex flex-col  items-center lg:items-center gap-1 md:gap-2 mt-2">
@@ -189,7 +185,6 @@ Mohon maaf dan terima kasih atas undangannya.`;
                                                 ))}
                                             </select>
 
-                                            {/* Arrow */}
                                             <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-600">
                                                 ▾
                                             </div>
@@ -199,7 +194,6 @@ Mohon maaf dan terima kasih atas undangannya.`;
 
 
 
-                                {/* CONTACT */}
                                 <motion.div variants={fadeUp} className="flex flex-col items-center justify-between  gap-2">
                                     <p className="text-[15px] font-source text-black uppercase">
                                         Konfirmasi
@@ -218,8 +212,7 @@ Mohon maaf dan terima kasih atas undangannya.`;
                                 </motion.div>
 
 
-                                {/* CONTACT */}
-                                <motion.div variants={fadeUp} className="flex flex-col items-center justify-between gap-2 mt-4">
+\                                <motion.div variants={fadeUp} className="flex flex-col items-center justify-between gap-2 mt-4">
                                     <p className=" text-[13px]  md:text-[15px] font-source text-black uppercase">
                                         Jika ada kendala pada RSVP, silakan hubungi Tim Provite.
                                     </p>

@@ -156,7 +156,7 @@ const Hero = () => {
                             ease: "easeInOut",
                         }}
                         style={{ transformOrigin: "center bottom" }}
-                        className="absolute top-[31.5%] md:top-[17%] lg:top-[40.5%] right-[50.2%] md:left-[37.8%] lg:left-[37.7%] z-20 w-[52px] md:w-[120px] lg:w-[120px] h-auto"
+                        className="absolute top-[31%] md:top-[17%] lg:top-[40.5%] right-[51%] md:left-[37.8%] lg:left-[37.7%] z-20 w-[53px] md:w-[120px] lg:w-[120px] h-auto"
                     >
                         <Image src="/image/mentahan/Muka-Cewe.svg" alt="bakso" width={78} height={355} />
                     </motion.div>
@@ -172,7 +172,7 @@ const Hero = () => {
                             ease: "easeInOut",
                         }}
                         style={{ transformOrigin: "center bottom" }}
-                        className="absolute top-[32.3%] md:top-[17.5%] lg:top-[41%] right-[35.4%] md:left-[56.4%] lg:left-[57.6%] z-20 w-[35px] md:w-[120px] h-auto">
+                        className="absolute top-[32.3%] md:top-[17.5%] lg:top-[41%] right-[35.5%] md:left-[56.4%] lg:left-[57.6%] z-20 w-[35px] md:w-[120px] h-auto">
                         <Image src="/image/mentahan/Muka-Cowo.svg" alt="bakso" width={55} height={355} />
                     </motion.div>
 
