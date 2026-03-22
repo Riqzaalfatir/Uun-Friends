@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { motion, Variants } from "framer-motion";
+import { FiHeadphones } from "react-icons/fi";
 
 const container: Variants = {
     hidden: {},
@@ -51,10 +52,39 @@ const fadeRight: Variants = {
 
 const Rsvp = () => {
     const [count, setCount] = useState(2);
-    const [status, setStatus] = useState<"hadir" | "tidak" | null>("hadir");
+    const [isTidak, setIsTidak] = useState(false);
+
+    const phoneNumber = "6283102851438";
+
+    const handleSendWA = () => {
+        const message = `Halo, saya ingin mengonfirmasi kehadiran.
+Jumlah tamu: ${count} orang.
+
+Terima kasih `;
+
+        const encodedMessage = encodeURIComponent(message);
+
+        const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+        window.open(url, "_blank");
+    };
+
+    const handleNotAttend = () => {
+        const message = `Halo, saya ingin mengonfirmasi bahwa saya tidak dapat hadir di acara tersebut.
+
+Mohon maaf dan terima kasih atas undangannya.`;
+
+        const encodedMessage = encodeURIComponent(message);
+        const url = `https://wa.me/6283102851438?text=${encodedMessage}`;
+
+        window.open(url, "_blank");
+    };
+
 
     const handleMinus = () => {
-        if (count > 1) setCount(count - 1);
+        if (count > 1) {
+            setCount(count - 1);
+        }
     };
 
     const handlePlus = () => {
@@ -66,7 +96,7 @@ const Rsvp = () => {
             <motion.div
                 variants={container}
                 initial="hidden"
-                whileInView="show"
+                animate="show"
                 viewport={{ once: true }}
                 className="max-w-7xl mx-auto px-4"
             >
@@ -83,104 +113,170 @@ const Rsvp = () => {
                     <motion.div variants={fadeRight} className="flex flex-col gap-6">
 
                         <motion.div variants={fadeUp}>
-                            <h3 className="font-barlow font-bold text-[25px] mb-1 text-black">
+                            <h3 className="font-barlow font-bold text-[25px] leading-[120%] mb-1 text-black">
                                 John Doe
                             </h3>
-                            <p className="text-[15px] max-w-[350px] font-source text-black">
+                            <p className="text-[15px] max-w-[350px] font-source text-black ">
                                 Daftar dulu ya, biar jajanannya siap nungguin kamu.
                                 Jangan lewat dari <span className="font-bold">Rabu, 14 Januari 2026.</span>
                             </p>
                         </motion.div>
 
-                        {/* BUTTON */}
+                        {/* BUTTONS */}
                         <motion.div variants={fadeUp} className="flex gap-2">
                             <motion.button
-                                onClick={() => setStatus("hadir")}
+                                onClick={() => setIsTidak(false)} // ✅ balik ke datang
                                 whileHover={{ scale: 1.03 }}
                                 whileTap={{ scale: 0.97 }}
-                                className={`w-full py-4 rounded-xl font-semibold font-barlow
-                                ${status === "hadir" ? "bg-[#EB621F] text-white" : "bg-[#EB621F] text-white"}`}
+                                transition={{ duration: 0.2 }}
+                                className={`w-full py-4 rounded-xl font-semibold font-barlow border transition ${!isTidak
+                                    ? "bg-[#EB621F] text-white border-[#EB621F]"
+                                    : "bg-transparent text-[#EB621F] border-[#EB621F]"
+                                    }`}
                             >
                                 DATANG DONG!
                             </motion.button>
 
                             <motion.button
-                                onClick={() => setStatus("tidak")}
+                                onClick={() => setIsTidak(true)} // ✅ ke tidak datang
+
                                 whileHover={{ scale: 1.03 }}
                                 whileTap={{ scale: 0.97 }}
-                                className={`w-full py-4 rounded-xl font-semibold font-barlow
-                                ${status === "tidak" ? "bg-white text-[#EB621F]" : "bg-[#EB621F] text-white"}`}
+                                transition={{ duration: 0.2 }}
+                                className={`w-full py-4 rounded-xl font-semibold font-barlow border transition ${isTidak
+                                    ? "bg-[#EB621F] text-white border-[#EB621F]"
+                                    : "bg-transparent text-[#EB621F] border-[#EB621F]"
+                                    }`}
                             >
                                 GA BISA DATANG :(
                             </motion.button>
+
                         </motion.div>
 
-                        {/* ========================= */}
-                        {/* ❌ TIDAK HADIR */}
-                        {/* ========================= */}
-                        {status === "tidak" && (
-                            <motion.div
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                className="flex flex-col gap-3 mt-2"
-                            >
-                                <p className="text-[15px] text-black text-center">
-                                    Yahh sayang banget kamu gak bisa datang 😢
-                                </p>
-
-                                <p className="text-[14px] text-black text-center">
-                                    Semoga kita bisa ketemu di lain waktu ya!
-                                </p>
-
-                                <a
-                                    href="https://wa.me/6283102851438?text=Maaf saya tidak bisa hadir"
-                                    target="_blank"
-                                    className="bg-[#EB621F] text-white text-center py-3 rounded-xl font-bold"
-                                >
-                                    Kirim Konfirmasi
-                                </a>
-                            </motion.div>
-                        )}
-
-                        {/* ========================= */}
-                        {/* ✅ HADIR */}
-                        {/* ========================= */}
-                        {status === "hadir" && (
+                        {/* COUNTER */}
+                        {!isTidak && (
                             <>
-                                {/* COUNTER */}
-                                <motion.div variants={fadeUp} className="flex flex-col gap-2 mt-2">
-                                    <p className="text-[16px] text-black">
-                                        Datang berapa orang?
-                                    </p>
-
-                                    <div className="flex items-center justify-between bg-white rounded-xl px-6 h-[50px] w-full">
-
-                                        <button onClick={handleMinus}>
-                                            -
-                                        </button>
-
-                                        <span>{count}</span>
-
-                                        <button onClick={handlePlus}>
-                                            +
-                                        </button>
-
-                                    </div>
-                                </motion.div>
-
-                                {/* KONFIRMASI */}
-                                <motion.div variants={fadeUp} className="flex flex-col gap-2 mt-2">
-                                    <p className="text-[15px] text-black">
+                                <motion.div variants={fadeUp} className="flex flex-col  items-center lg:items-center gap-1 md:gap-2 mt-2">
+                                    <p className="text-[16px] font-source text-black font-bold uppercase text-center">
                                         Konfirmasi Kedatangan
                                     </p>
 
-                                    <a
-                                        href="https://wa.me/6283102851438"
-                                        target="_blank"
-                                        className="bg-[#EB621F] text-white px-12 py-2 rounded-xl text-center font-bold"
+                                    <div className="flex flex-col items-start w-full mt-4">
+                                        <p className="text-[14px] font-source text-left text-black uppercase">
+                                            Jumlah Tamu
+                                        </p>
+                                        <div className="relative w-full mt-2">
+                                            <select
+                                                value={count}
+                                                onChange={(e) => setCount(Number(e.target.value))}
+                                                className="
+            w-full h-[50px]
+            px-4 pr-10
+            rounded-xl
+            bg-white
+            text-gray-800
+            text-[16px]
+            font-medium
+            outline-none
+            appearance-none
+            cursor-pointer
+        "
+                                            >
+                                                {[1, 2, 3, 4, 5, 6].map((num) => (
+                                                    <option key={num} value={num}>
+                                                        {num}
+                                                    </option>
+                                                ))}
+                                            </select>
+
+                                            {/* Arrow */}
+                                            <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-600">
+                                                ▾
+                                            </div>
+                                        </div>
+                                    </div>
+                                </motion.div>
+
+
+
+                                {/* CONTACT */}
+                                <motion.div variants={fadeUp} className="flex flex-col items-center justify-between  gap-2">
+                                    <p className="text-[15px] font-source text-black uppercase">
+                                        Konfirmasi
+                                    </p>
+
+                                    <motion.a
+                                        whileHover={{ scale: 1.04 }}
+                                        whileTap={{ scale: 0.97 }}
+                                        transition={{ duration: 0.25 }}
+                                        onClick={handleSendWA}
+                                        rel="noopener noreferrer"
+                                        className="border text-center px-20 border-[#EB621F] bg-[#EB621F] text-white py-2 rounded-xl text-[16px] font-bold font-barlow mx-auto"
                                     >
-                                        Ya
-                                    </a>
+                                        YA
+                                    </motion.a>
+                                </motion.div>
+
+
+                                {/* CONTACT */}
+                                <motion.div variants={fadeUp} className="flex flex-col items-center justify-between gap-2 mt-4">
+                                    <p className=" text-[13px]  md:text-[15px] font-source text-black uppercase">
+                                        Jika ada kendala pada RSVP, silakan hubungi Tim Provite.
+                                    </p>
+
+                                    <motion.a
+                                        whileHover={{ scale: 1.04 }}
+                                        whileTap={{ scale: 0.97 }}
+                                        transition={{ duration: 0.25 }}
+                                        href="https://wa.me/6283102851438?text=Halo,%20saya%20mengalami%20kendala%20dalam%20pengisian%20RSVP.%20Mohon%20bantuannya."
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex items-center gap-3 border border-[#EB621F] text-[#EB621F] px-12 py-3 rounded-xl text-[16px] font-bold font-barlow"
+                                    >
+                                        <img src="/image/rsvp/Vector.png" alt="" className="w-4" />
+                                        MINTA TOLONG KE TIM PROVITE
+                                    </motion.a>
+                                </motion.div>
+                            </>
+                        )}
+
+                        {isTidak && (
+                            <>
+                                <motion.div variants={fadeUp} className="flex flex-col items-center justify-between gap-2 mt-4">
+                                    <p className="text-[15px] font-source text-black uppercase font-bold">
+                                        Apa Kamu Yakin ?
+                                    </p>
+
+                                    <motion.a
+                                        whileHover={{ scale: 1.04 }}
+                                        whileTap={{ scale: 0.97 }}
+                                        transition={{ duration: 0.25 }}
+                                        onClick={handleNotAttend}
+
+                                        rel="noopener noreferrer"
+                                        className="flex uppercase items-center gap-3 border bg-[#EB621F] text-white px-12 py-3 rounded-xl text-[16px] font-bold font-barlow"
+                                    >
+                                        Konfirmasi Tidak Datang
+                                    </motion.a>
+                                </motion.div>
+
+                                <motion.div variants={fadeUp} className="flex flex-col items-center justify-between gap-2 mt-4">
+                                    <p className="text-[13px] font-source text-black uppercase">
+                                        Jika ada kendala pada RSVP, silakan hubungi Tim Provite.
+                                    </p>
+
+                                    <motion.a
+                                        whileHover={{ scale: 1.04 }}
+                                        whileTap={{ scale: 0.97 }}
+                                        transition={{ duration: 0.25 }}
+                                        href="https://wa.me/6283102851438?text=Halo,%20saya%20mengalami%20kendala%20dalam%20pengisian%20RSVP.%20Mohon%20bantuannya."
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex items-center gap-3 border border-[#EB621F] text-[#EB621F] px-12 py-3 rounded-xl text-[16px] font-bold font-barlow"
+                                    >
+                                        <img src="/image/rsvp/Vector.png" alt="" className="w-4" />
+                                        MINTA TOLONG KE TIM PROVITE
+                                    </motion.a>
                                 </motion.div>
                             </>
                         )}
