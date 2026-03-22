@@ -51,7 +51,7 @@ const fadeRight: Variants = {
 
 const Rsvp = () => {
     const [count, setCount] = useState(2);
-    const [status, setStatus] = useState<"hadir" | "tidak" | null>(null);
+    const [status, setStatus] = useState<"hadir" | "tidak" | null>("hadir");
 
     const handleMinus = () => {
         if (count > 1) setCount(count - 1);
@@ -99,7 +99,7 @@ const Rsvp = () => {
                                 whileHover={{ scale: 1.03 }}
                                 whileTap={{ scale: 0.97 }}
                                 className={`w-full py-4 rounded-xl font-semibold font-barlow
-                                ${status === "hadir" ? "bg-white text-[#EB621F]" : "bg-[#EB621F] text-white"}`}
+                                ${status === "hadir" ? "bg-[#EB621F] text-white" : "bg-[#EB621F] text-white"}`}
                             >
                                 DATANG DONG!
                             </motion.button>
@@ -145,7 +145,7 @@ const Rsvp = () => {
                         {/* ========================= */}
                         {/* ✅ HADIR */}
                         {/* ========================= */}
-                        {status !== "tidak" && (
+                        {status === "hadir" && (
                             <>
                                 {/* COUNTER */}
                                 <motion.div variants={fadeUp} className="flex flex-col gap-2 mt-2">
