@@ -210,9 +210,8 @@ Mohon maaf dan terima kasih atas undangannya.`;
                                         YA
                                     </motion.a>
                                 </motion.div>
-
-
-\                                <motion.div variants={fadeUp} className="flex flex-col items-center justify-between gap-2 mt-4">
+                                
+                                <motion.div variants={fadeUp} className="flex flex-col items-center justify-between gap-2 mt-4">
                                     <p className=" text-[13px]  md:text-[15px] font-source text-black uppercase">
                                         Jika ada kendala pada RSVP, silakan hubungi Tim Provite.
                                     </p>
