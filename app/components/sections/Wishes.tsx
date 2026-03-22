@@ -50,7 +50,7 @@ const Wishes = ({ onShowAll }: WishesProps) => {
                         />
 
                         <textarea
-                            placeholder="Write your message here"
+                            placeholder="Tulis Pesan..."
                             rows={8}
                             value={message}
                             onChange={(e) => setMessage(e.target.value)}

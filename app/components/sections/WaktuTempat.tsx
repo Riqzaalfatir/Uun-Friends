@@ -80,8 +80,7 @@ const WaktuTempat = () => {
                   SENIN, 6 APRIL TAHUN INI
                   <span className="block">
                     <span className="md:whitespace-normal">
-                      JAM 5 SORE MULAI,
-                      <span className="md:block">SAMPAI KENYANG</span>
+                      JAM 5 SORE MULAI, <span className="md:block">SAMPAI KENYANG</span>
                     </span>
                   </span>
                 </motion.p>

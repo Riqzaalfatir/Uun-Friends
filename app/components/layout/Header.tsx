@@ -27,7 +27,7 @@ const Header = () => {
           ))}
         </div>
 
-        <div className="md:hidden absolute left-8 top-5 z-50">
+        <div className="fixed md:hidden  left-8 top-5 z-50">
           {isOpen ? (
             <FaTimes
               size={22}

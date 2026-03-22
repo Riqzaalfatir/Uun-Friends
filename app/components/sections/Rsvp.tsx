@@ -90,7 +90,7 @@ const Rsvp = () => {
                             </h3>
                             <p className="text-[15px] max-w-[350px] font-source text-black ">
                                 Daftar dulu ya, biar jajanannya siap nungguin kamu.
-                                Jangan lewat dari Rabu, 14 Januari 2026.
+                                Jangan lewat dari <span className="font-bold">Rabu, 14 Januari 2026.</span>
                             </p>
                         </motion.div>
 
