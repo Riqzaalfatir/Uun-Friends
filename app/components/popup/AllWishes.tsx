@@ -50,7 +50,7 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
                 ←   Kembali
               </button>
             </div>
-            
+
             {/* TEXT */}
             <Image
               src="/image/hero/JAJAN.png"
@@ -137,7 +137,7 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
             />
 
             <Image
-              src="/image/mentahan/Mentahan-Cowo.png"
+              src="/image/mentahan/Mentahan-Cowo copy.png"
               alt="cowok"
               width={65}
               height={114}
@@ -155,75 +155,76 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
             {/* MENTAHAN ORANG */}
             <motion.div
               animate={{
-                rotate: [0, 3, -3, 0],
-                y: [0, -2, 2, 0]
+                x: [0, 2, -2, 0],
+                rotate: [0, 1, -1, 0],
               }}
               transition={{
-                duration: 2,
+                duration: 2.5,
                 repeat: Infinity,
-                ease: "easeInOut"
+                ease: "easeInOut",
               }}
-              style={{ transformOrigin: "center top" }}
-              className="absolute top-[55.5%] md:top-[33%] lg:top-[56%] right-[57.5%] md:left-[35.4%] lg:left-[36.5%] z-40 w-[37px] md:w-[120px] lg:w-[140px] h-auto"
+              style={{ transformOrigin: "center bottom" }}
+              className="absolute top-[55%] md:top-[33%] lg:top-[55.5%] right-[58.6%] md:left-[35.4%] lg:left-[36.3%] z-40 w-[39px] md:w-[120px] lg:w-[140px] h-auto"
             >
               <Image
                 src="/image/mentahan/MentahanKangBakso.svg"
                 alt="bakso"
-                width={50}
+                width={54}
                 height={355}
               />
             </motion.div>
 
             {/* MENTAHAN ORANG CEWE */}
-                                                <motion.div
-                                                    animate={{
-                                                        rotate: [0, 3, -3, 0],
-                                                        y: [0, -2, 2, 0]
-                                                    }}
-                                                    transition={{
-                                                        duration: 2,
-                                                        repeat: Infinity,
-                                                        ease: "easeInOut"
-                                                    }}
-                                                    style={{ transformOrigin: "center top" }}
-                                                    className="absolute top-[32%] md:top-[11%] lg:top-[36.5%] right-[52%] md:left-[38.9%] lg:left-[39.6%] z-20 w-[45px] md:w-[120px] lg:w-[145px] h-auto"
-                                                >
-                                                    <Image
-                                                        src="/image/mentahan/Muka-Cewe.svg"
-                                                        alt="Muka Cewe"
-                                                        width={75}
-                                                        height={355}
-                                                    />
-                                                </motion.div>
-                                
-                                                {/* MENTAHAN ORANG COWO */}
-                                                <motion.div
-                                                    animate={{
-                                                        rotate: [0, 3, -3, 0],
-                                                        y: [0, -2, 2, 0]
-                                                    }}
-                                                    transition={{
-                                                        duration: 2,
-                                                        repeat: Infinity,
-                                                        ease: "easeInOut"
-                                                    }}
-                                                    style={{ transformOrigin: "center top" }}
-                                                    className="absolute top-[30%] md:top-[10.5%] lg:top-[35.9%] right-[37.4%] md:left-[53.5%] lg:left-[53.7%] z-20 w-[33px] md:w-[100px] h-auto"
-                                                >
-                                                    <Image
-                                                        src="/image/mentahan/Muka-Cowo.svg"
-                                                        alt="Muka Cowo"
-                                                        width={54}
-                                                        height={355}
-                                                    />
-                                                </motion.div>
-                                
-                                                <img
-                                                    src="/image/mentahan/asap.gif"
-                                                    alt="animasi"
-                                                    className="absolute w-[50px] h-auto top-[60%] md:top-[38%] lg:top-[60.8%] right-[64.5%] md:left-[29%] lg:left-[30.3%] z-50 opacity-50"
-                                                />
-                                
+            <motion.div
+              animate={{
+                x: [0, 2.5, -2.5, 0],
+                rotate: [0, 2, -2, 0],
+              }}
+              transition={{
+                duration: 2.5,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+              style={{ transformOrigin: "center bottom" }}
+              className="absolute top-[30.5%] md:top-[10%] lg:top-[35%] right-[51.1%] md:left-[38.2%] lg:left-[39.2%] z-20 w-[47px] md:w-[120px] lg:w-[145px] h-auto"
+            >
+              <Image
+                src="/image/mentahan/Muka-Cewe.svg"
+                alt="Muka Cewe"
+                width={82}
+                height={355}
+              />
+            </motion.div>
+
+            {/* MENTAHAN ORANG COWO */}
+            <motion.div
+              animate={{
+                x: [0, 2, -2, 0],
+                rotate: [0, 1, -1, 0],
+              }}
+              transition={{
+                duration: 2.5,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+              style={{ transformOrigin: "center bottom" }}
+              className="absolute top-[29.5%] md:top-[10.5%] lg:top-[35%] right-[37.3%] md:left-[53%] lg:left-[53.4%] z-20 w-[36px] md:w-[100px] h-auto"
+            >
+              <Image
+                src="/image/mentahan/Muka-Cowo.svg"
+                alt="Muka Cowo"
+                width={58}
+                height={355}
+              />
+            </motion.div>
+
+
+            <img
+              src="/image/mentahan/asap.gif"
+              alt="animasi"
+              className="absolute w-[50px] h-auto top-[60%] md:top-[38%] lg:top-[60.8%] right-[64.5%] md:left-[29%] lg:left-[30.3%] z-50 opacity-50"
+            />
+
 
             {/* TEXT BAWAH */}
             <p

@@ -36,9 +36,9 @@ export default function OpeningScreen({ onOpen }: Props) {
                 <div className="w-full h-[1px] bg-[#CC561B] z-0" />
                 <div className="w-full h-[1px] bg-[#CC561B] z-0" />
             </div>
-            
 
-        {/* DEKSTOP */}
+
+            {/* DEKSTOP */}
             <div className="hidden lg:flex relative w-full max-w-[500px] aspect-[4/5] flex-col items-center justify-center text-center">
 
                 <Image src="/image/hero/JAJAN.png" alt="jajan" width={435} height={380} className="absolute top-[30%] md:top-[12%] lg:-top-[5%] left-1/2 -translate-x-1/2 scale-[0.9] md:scale-100" />
@@ -66,30 +66,51 @@ export default function OpeningScreen({ onOpen }: Props) {
                 <Image src="/image/mentahan/MentahanBakso.png" alt="bakso" width={280} height={355} className="absolute top-[161%] md:top-[108%] lg:top-[60%] right-[19%] md:left-[24%] lg:left-[12.1%] z-40 scale-[0.75] md:scale-100" />
 
                 <motion.div
-                    animate={{ rotate: [0, 3, -3, 0], y: [0, -2, 2, 0] }}
-                    transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-                    style={{ transformOrigin: "center top" }}
-                    className="absolute top-[55%] md:top-[41%] lg:top-[58.7%] right-[57.5%] md:left-[13%] lg:left-[36.3%] z-40 w-[40px] md:w-[120px] lg:w-[140px] h-auto"
+                    animate={{
+                        x: [0, 2, -2, 0],
+                        rotate: [0, 1, -1, 0],
+                    }}
+                    transition={{
+                        duration: 2.5,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                    }}
+                    style={{ transformOrigin: "center bottom" }}
+                    className="absolute top-[55%] md:top-[41%] lg:top-[58.7%] right-[57.5%] md:left-[13%] lg:left-[36.6%] z-40 w-[40px] md:w-[120px] lg:w-[140px] h-auto"
                 >
-                    <Image src="/image/mentahan/MentahanKangBakso.png" alt="bakso" width={50} height={355} />
+                    <Image src="/image/mentahan/MentahanKangBakso.svg" alt="bakso" width={52} height={355} />
                 </motion.div>
 
                 <motion.div
-                    animate={{ rotate: [0, 3, -3, 0], y: [0, -2, 2, 0] }}
-                    transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-                    style={{ transformOrigin: "center top" }}
-                    className="absolute top-[55%] md:top-[41%] lg:top-[32%] right-[57.5%] md:left-[13%] lg:left-[36.7%] z-20 w-[40px] md:w-[120px]  h-auto"
+                    animate={{
+                        x: [0, 2, -2, 0],
+                        rotate: [0, 1, -1, 0],
+                    }}
+                    transition={{
+                        duration: 2.5,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                    }}
+                    style={{ transformOrigin: "center bottom" }}
+                    className="absolute top-[55%] md:top-[41%] lg:top-[31%] right-[57.5%] md:left-[13%] lg:left-[36.3%] z-20 w-[40px] md:w-[120px]  h-auto"
                 >
-                    <Image src="/image/mentahan/Muka-Cewe.png" alt="bakso" width={71} height={355} />
+                    <Image src="/image/mentahan/Muka-Cewe.svg" alt="bakso" width={75} height={355} />
                 </motion.div>
 
                 <motion.div
-                    animate={{ rotate: [0, 3, -3, 0], y: [0, -2, 2, 0] }}
-                    transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-                    style={{ transformOrigin: "center top" }}
-                    className="absolute top-[55%] md:top-[41%] lg:top-[31.3%] right-[57.5%] md:left-[13%] lg:left-[58.5%] z-20 w-[40px] md:w-[100px] h-auto"
+                    animate={{
+                        x: [0, 2, -2, 0],
+                        rotate: [0, 1, -1, 0],
+                    }}
+                    transition={{
+                        duration: 2.5,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                    }}
+                    style={{ transformOrigin: "center bottom" }}
+                    className="absolute top-[55%] md:top-[41%] lg:top-[31%] right-[57.5%] md:left-[13%] lg:left-[58.2%] z-20 w-[40px] md:w-[100px] h-auto"
                 >
-                    <Image src="/image/mentahan/Muka-Cowo.png" alt="bakso" width={50} height={355} />
+                    <Image src="/image/mentahan/Muka-Cowo.svg" alt="bakso" width={53} height={355} />
                 </motion.div>
 
                 <img src="/image/mentahan/asap.gif" alt="animasi" className="absolute w-[50px] h-auto top-[55%] md:top-[41%] lg:top-[65.5%] right-[57.5%] md:left-[13%] lg:left-[28.3%] z-50 opacity-50" />
@@ -108,7 +129,7 @@ export default function OpeningScreen({ onOpen }: Props) {
                 </motion.button>
             </div>
 
-        {/* MOBILE  & TABLET*/}
+            {/* MOBILE  & TABLET*/}
             <div className="flex lg:hidden items-center justify-center w-full h-full px-4">
                 <div className="relative w-full max-w-[380px] md:max-w-[620px] h-[80vh] md:h-[85vh] max-h-[550px] md:max-h-[800px] bg-[#EB621F] rounded-xl shadow-2xl overflow-hidden flex items-center justify-center">
 
@@ -125,7 +146,7 @@ export default function OpeningScreen({ onOpen }: Props) {
                     </div>
 
                     <Image src="/image/hero/JAJAN.png" alt="jajan" width={240} height={200} className="absolute top-[8%] md:top-[8%] left-1/2 -translate-x-1/2" />
-                    <Image src="/image/hero/BARENG.png" alt="bareng" width={300} height={200} className="absolute top-[24%] md:top-[19%] left-1/2 -translate-x-1/2 z-10"  />
+                    <Image src="/image/hero/BARENG.png" alt="bareng" width={300} height={200} className="absolute top-[24%] md:top-[19%] left-1/2 -translate-x-1/2 z-10" />
                     <Image src="/image/hero/UUN text.png" alt="uun" width={160} height={160} className="absolute top-[37%] md:top-[29%] left-[47%] md:left-[48%] z-30 -translate-x-1/2" />
 
                     <Image src="/image/hero/VOLUME 2.png" alt="volume" width={70} height={95} className="absolute top-[5%] md:top-[7%] left-[76%] md:left-[66%] z-10 -translate-x-1/2" />
@@ -142,16 +163,16 @@ export default function OpeningScreen({ onOpen }: Props) {
 
                     <motion.div
                         animate={{
-                            rotate: [0, 3, -3, 0],
-                            y: [0, -2, 2, 0]
+                            x: [0, 2, -2, 0],
+                            rotate: [0, 1, -1, 0],
                         }}
                         transition={{
-                            duration: 2,
+                            duration: 2.5,
                             repeat: Infinity,
-                            ease: "easeInOut"
+                            ease: "easeInOut",
                         }}
-                        style={{ transformOrigin: "center top" }}
-                        className="absolute top-[49.1%] md:top-[37%] lg:top-[58%] right-[58.8%] md:left-[38%] lg:left-[36.5%] z-40 w-[30px] md:w-[35px] lg:w-[120px] h-auto"
+                        style={{ transformOrigin: "center bottom" }}
+                        className="absolute top-[48.3%] md:top-[37%] lg:top-[58%] right-[58%] md:left-[37.8%] lg:left-[36.5%] z-40 w-[36px] md:w-[36px] lg:w-[120px] h-auto"
                     >
                         <Image
                             src="/image/mentahan/MentahanKangBakso.svg"
@@ -163,16 +184,16 @@ export default function OpeningScreen({ onOpen }: Props) {
 
                     <motion.div
                         animate={{
-                            rotate: [0, 3, -3, 0],
-                            y: [0, -2, 2, 0]
+                            x: [0, 2, -2, 0],
+                            rotate: [0, 1, -1, 0],
                         }}
                         transition={{
-                            duration: 2,
+                            duration: 2.5,
                             repeat: Infinity,
-                            ease: "easeInOut"
+                            ease: "easeInOut",
                         }}
-                        style={{ transformOrigin: "center top" }}
-                        className="absolute top-[32.8%] md:top-[25%] lg:top-[32%] right-[48.9%] md:left-[41.8%] lg:left-[37.1%] z-20 w-[49px] md:w-[50px]  h-auto"
+                        style={{ transformOrigin: "center bottom" }}
+                        className="absolute top-[30.9%] md:top-[24%] lg:top-[32%] right-[48.5%] md:left-[41%] lg:left-[37.1%] z-20 w-[55px] md:w-[55px]  h-auto"
                     >
                         <Image
                             src="/image/mentahan/Muka-Cewe.svg"
@@ -184,16 +205,16 @@ export default function OpeningScreen({ onOpen }: Props) {
 
                     <motion.div
                         animate={{
-                            rotate: [0, 3, -3, 0],
-                            y: [0, -2, 2, 0]
+                            x: [0, 2, -2, 0],
+                            rotate: [0, 1, -1, 0],
                         }}
                         transition={{
-                            duration: 2,
+                            duration: 2.5,
                             repeat: Infinity,
-                            ease: "easeInOut"
+                            ease: "easeInOut",
                         }}
-                        style={{ transformOrigin: "center top" }}
-                        className="absolute top-[32%] md:top-[24%] lg:top-[29.5%] right-[34.1%] md:left-[52%] lg:left-[55.3%] z-20 w-[36px] md:w-[38px] lg:w-[120px] h-auto"
+                        style={{ transformOrigin: "center bottom" }}
+                        className="absolute top-[31%] md:top-[24.5%] lg:top-[29.5%] right-[34%] md:left-[52%] lg:left-[55.3%] z-20 w-[38px] md:w-[38px] lg:w-[120px] h-auto"
                     >
                         <Image
                             src="/image/mentahan/Muka-Cowo.svg"

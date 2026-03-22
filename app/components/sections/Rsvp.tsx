@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { motion, Variants } from "framer-motion";
-import { FiHeadphones } from "react-icons/fi";
 
 const container: Variants = {
     hidden: {},
@@ -52,11 +51,10 @@ const fadeRight: Variants = {
 
 const Rsvp = () => {
     const [count, setCount] = useState(2);
+    const [status, setStatus] = useState<"hadir" | "tidak" | null>(null);
 
     const handleMinus = () => {
-        if (count > 1) {
-            setCount(count - 1);
-        }
+        if (count > 1) setCount(count - 1);
     };
 
     const handlePlus = () => {
@@ -69,7 +67,7 @@ const Rsvp = () => {
                 variants={container}
                 initial="hidden"
                 whileInView="show"
-                viewport={{ once: true, margin: "-100px" }}
+                viewport={{ once: true }}
                 className="max-w-7xl mx-auto px-4"
             >
                 <div className="grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-7 md:gap-10 items-center">
@@ -85,92 +83,107 @@ const Rsvp = () => {
                     <motion.div variants={fadeRight} className="flex flex-col gap-6">
 
                         <motion.div variants={fadeUp}>
-                            <h3 className="font-barlow font-bold text-[25px] leading-[120%] mb-1 text-black">
+                            <h3 className="font-barlow font-bold text-[25px] mb-1 text-black">
                                 John Doe
                             </h3>
-                            <p className="text-[15px] max-w-[350px] font-source text-black ">
+                            <p className="text-[15px] max-w-[350px] font-source text-black">
                                 Daftar dulu ya, biar jajanannya siap nungguin kamu.
                                 Jangan lewat dari <span className="font-bold">Rabu, 14 Januari 2026.</span>
                             </p>
                         </motion.div>
 
-                        {/* BUTTONS */}
+                        {/* BUTTON */}
                         <motion.div variants={fadeUp} className="flex gap-2">
                             <motion.button
-                                whileHover={{ scale: 1.05 }}
+                                onClick={() => setStatus("hadir")}
+                                whileHover={{ scale: 1.03 }}
                                 whileTap={{ scale: 0.97 }}
-                                transition={{ duration: 0.2 }}
-                                className="bg-[#EB621F] text-white w-full py-4 rounded-xl font-semibold text-[16px] font-barlow"
+                                className={`w-full py-4 rounded-xl font-semibold font-barlow
+                                ${status === "hadir" ? "bg-white text-[#EB621F]" : "bg-[#EB621F] text-white"}`}
                             >
                                 DATANG DONG!
                             </motion.button>
 
                             <motion.button
-                                whileHover={{ scale: 1.05 }}
+                                onClick={() => setStatus("tidak")}
+                                whileHover={{ scale: 1.03 }}
                                 whileTap={{ scale: 0.97 }}
-                                transition={{ duration: 0.2 }}
-                                className="bg-[#EB621F] text-white w-full py-4 rounded-xl font-semibold font-barlow"
+                                className={`w-full py-4 rounded-xl font-semibold font-barlow
+                                ${status === "tidak" ? "bg-white text-[#EB621F]" : "bg-[#EB621F] text-white"}`}
                             >
                                 GA BISA DATANG :(
                             </motion.button>
                         </motion.div>
 
-                        {/* COUNTER */}
-                        <motion.div variants={fadeUp} className="flex flex-col lg:flex-row items-start lg:items-center gap-1 md:gap-4 mt-2">
-                            <p className="text-[16px] font-source text-left text-black">
-                                Datang berapa orang?
-                            </p>
-
-                            <div className="flex items-center justify-between bg-white rounded-xl px-6 h-[50px] w-full lg:w-[220px]">
-
-                                <motion.button
-                                    onClick={handleMinus}
-                                    whileTap={{ scale: 0.8 }}
-                                    className="flex items-center w-[24px] h-[24px]"
-                                >
-                                    <div className="w-[12px] h-[2.5px] bg-[#EB621F] rounded-full"></div>
-                                </motion.button>
-
-                                <motion.span
-                                    key={count}
-                                    initial={{ scale: 0.8, opacity: 0 }}
-                                    animate={{ scale: 1, opacity: 1 }}
-                                    transition={{ duration: 0.25 }}
-                                    className="text-[14px] font-source font-normal text-slate-700"
-                                >
-                                    {count}
-                                </motion.span>
-
-                                <motion.button
-                                    onClick={handlePlus}
-                                    whileTap={{ scale: 0.8 }}
-                                    className="text-[#EB621F] text-2xl"
-                                >
-                                    +
-                                </motion.button>
-
-                            </div>
-                        </motion.div>
-
-                        {/* CONTACT */}
-                        <motion.div variants={fadeUp} className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 mt-2">
-                            <p className="text-[15px] font-source text-black">
-                                Jika ada kendala pada RSVP, silakan hubungi Tim Provite.
-                            </p>
-
-                            <motion.a
-                                whileHover={{ scale: 1.04 }}
-                                whileTap={{ scale: 0.97 }}
-                                transition={{ duration: 0.25 }}
-                                href="https://wa.me/6283102851438?text=Halo,%20saya%20mengalami%20kendala%20dalam%20pengisian%20RSVP.%20Mohon%20bantuannya."
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex items-center gap-3 border border-[#EB621F] text-[#EB621F] px-12 py-3 rounded-xl text-[16px] font-bold font-barlow"
+                        {/* ========================= */}
+                        {/* ❌ TIDAK HADIR */}
+                        {/* ========================= */}
+                        {status === "tidak" && (
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                className="flex flex-col gap-3 mt-2"
                             >
-                                <img src="/image/rsvp/Vector.png" alt="" className="w-4" />
-                                MINTA TOLONG KE TIM PROVITE
-                            </motion.a>
-                        </motion.div>
+                                <p className="text-[15px] text-black text-center">
+                                    Yahh sayang banget kamu gak bisa datang 😢
+                                </p>
+
+                                <p className="text-[14px] text-black text-center">
+                                    Semoga kita bisa ketemu di lain waktu ya!
+                                </p>
+
+                                <a
+                                    href="https://wa.me/6283102851438?text=Maaf saya tidak bisa hadir"
+                                    target="_blank"
+                                    className="bg-[#EB621F] text-white text-center py-3 rounded-xl font-bold"
+                                >
+                                    Kirim Konfirmasi
+                                </a>
+                            </motion.div>
+                        )}
+
+                        {/* ========================= */}
+                        {/* ✅ HADIR */}
+                        {/* ========================= */}
+                        {status !== "tidak" && (
+                            <>
+                                {/* COUNTER */}
+                                <motion.div variants={fadeUp} className="flex flex-col gap-2 mt-2">
+                                    <p className="text-[16px] text-black">
+                                        Datang berapa orang?
+                                    </p>
+
+                                    <div className="flex items-center justify-between bg-white rounded-xl px-6 h-[50px] w-full">
+
+                                        <button onClick={handleMinus}>
+                                            -
+                                        </button>
+
+                                        <span>{count}</span>
+
+                                        <button onClick={handlePlus}>
+                                            +
+                                        </button>
+
+                                    </div>
+                                </motion.div>
+
+                                {/* KONFIRMASI */}
+                                <motion.div variants={fadeUp} className="flex flex-col gap-2 mt-2">
+                                    <p className="text-[15px] text-black">
+                                        Konfirmasi Kedatangan
+                                    </p>
+
+                                    <a
+                                        href="https://wa.me/6283102851438"
+                                        target="_blank"
+                                        className="bg-[#EB621F] text-white px-12 py-2 rounded-xl text-center font-bold"
+                                    >
+                                        Ya
+                                    </a>
+                                </motion.div>
+                            </>
+                        )}
 
                     </motion.div>
                 </div>

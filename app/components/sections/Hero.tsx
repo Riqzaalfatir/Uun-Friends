@@ -126,60 +126,60 @@ const Hero = () => {
 
                     <motion.div
                         animate={{
-                            rotate: [0, 3, -3, 0],
-                            y: [0, -2, 2, 0]
+                            x: [0, 2, -2, 0],
+                            rotate: [0, 1, -1, 0],
                         }}
                         transition={{
-                            duration: 2,
+                            duration: 2.5,
                             repeat: Infinity,
-                            ease: "easeInOut"
+                            ease: "easeInOut",
                         }}
-                        style={{ transformOrigin: "center top" }}
-                        className="absolute top-[55.7%] md:top-[40%] lg:top-[68.5%] right-[57.7%] md:left-[33%] lg:left-[36%] z-40 w-[37px] md:w-[120px] lg:w-[140px] h-auto"
+                        style={{ transformOrigin: "center bottom" }}
+                        className="absolute top-[54.5%] md:top-[39.3%] lg:top-[68.5%] right-[57%] md:left-[33.5%] lg:left-[36.4%] z-40 w-[40px] md:w-[145px] lg:w-[140px] h-auto"
                     >
                         <Image
                             src="/image/mentahan/MentahanKangBakso.svg"
                             alt="bakso"
-                            width={50}
+                            width={53.5}
                             height={355}
                         />
                     </motion.div>
 
                     <motion.div
                         animate={{
-                            rotate: [0, 3, -3, 0],
-                            y: [0, -2, 2, 0]
-                                }}
-                            transition={{
-                                duration: 2,
-                                repeat: Infinity,
-                                ease: "easeInOut"
-                                }}
-                                style={{ transformOrigin: "center top" }}
-                                className="absolute top-[33%] md:top-[18%] lg:top-[42.9%] right-[51.9%] md:left-[38.7%] lg:left-[39%] z-20 w-[44px] md:w-[120px] lg:w-[120px] h-auto"
-                                >
-                        <Image  src="/image/mentahan/Muka-Cewe.svg" alt="bakso" width={66}  height={355} />
+                            x: [0, 2.5, -2.5, 0],
+                            rotate: [0, 2, -2, 0],
+                        }}
+                        transition={{
+                            duration: 2.5,
+                            repeat: Infinity,
+                            ease: "easeInOut",
+                        }}
+                        style={{ transformOrigin: "center bottom" }}
+                        className="absolute top-[31.5%] md:top-[17%] lg:top-[40.5%] right-[50.2%] md:left-[37.8%] lg:left-[37.7%] z-20 w-[52px] md:w-[120px] lg:w-[120px] h-auto"
+                    >
+                        <Image src="/image/mentahan/Muka-Cewe.svg" alt="bakso" width={78} height={355} />
                     </motion.div>
-                    
+
                     <motion.div
                         animate={{
-                            rotate: [0, 3, -3, 0],
-                            y: [0, -2, 2, 0]
-                                }}
-                            transition={{
-                                duration: 2,
-                                repeat: Infinity,
-                                ease: "easeInOut"
-                                    }}
-                            style={{ transformOrigin: "center top" }}
-                            className="absolute top-[32.3%] md:top-[17.5%] lg:top-[42%] right-[35.3%] md:left-[56.8%] lg:left-[57.9%] z-20 w-[33px] md:w-[120px] h-auto">
-                        <Image src="/image/mentahan/Muka-Cowo.svg" alt="bakso"  width={51}  height={355} />
+                            x: [0, 2, -2, 0],
+                            rotate: [0, 1, -1, 0],
+                        }}
+                        transition={{
+                            duration: 2.5,
+                            repeat: Infinity,
+                            ease: "easeInOut",
+                        }}
+                        style={{ transformOrigin: "center bottom" }}
+                        className="absolute top-[32.3%] md:top-[17.5%] lg:top-[41%] right-[35.4%] md:left-[56.4%] lg:left-[57.6%] z-20 w-[35px] md:w-[120px] h-auto">
+                        <Image src="/image/mentahan/Muka-Cowo.svg" alt="bakso" width={55} height={355} />
                     </motion.div>
-                    
+
                     <img src="/image/mentahan/asap.gif" alt="animasi"
-                         className="absolute w-[50px] h-auto top-[60%] md:top-[45.5%] lg:top-[75.5%] right-[64.5%] md:left-[26.5%] lg:left-[28.3%] z-50 opacity-50"
+                        className="absolute w-[50px] h-auto top-[60%] md:top-[45.5%] lg:top-[75.5%] right-[64.5%] md:left-[26.5%] lg:left-[28.3%] z-50 opacity-50"
                     />
-                    
+
 
 
                     <p className="absolute top-[100%] md:top-100%] lg:top-[94.1%]  left-1/2 -translate-x-1/2   text-[35px] md:text-[55px] lg:text-[40px] text-[#F4ECA3]   font-barlow font-bold text-center text-[] scale-[0.9] md:scale-100 whitespace-nowrap">
