@@ -159,7 +159,7 @@ Mohon maaf dan terima kasih atas undangannya.`;
 
                                     <div className="flex flex-col items-start w-full mt-4">
                                         <p className="text-[14px] font-source text-left text-black uppercase">
-                                            Jumlah Tamu
+                                            Datang berapa orang ?
                                         </p>
                                         <div className="relative w-full mt-2">
                                             <select

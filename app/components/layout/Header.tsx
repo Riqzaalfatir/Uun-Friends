@@ -45,7 +45,7 @@ const Header = () => {
       </nav>
 
       <div
-        className={`absolute top-0 left-0 w-full bg-[#EB621F] flex flex-col items-center justify-center gap-4 text-[14px] uppercase tracking-widest font-barlow font-bold text-[#F4ECA3] transition-all duration-300 ${
+        className={`fixed top-0 left-0 w-full bg-[#EB621F] flex flex-col items-center justify-center gap-4 text-[14px] uppercase tracking-widest font-barlow font-bold text-[#F4ECA3] transition-all duration-300 ${
           isOpen
             ? "opacity-100 translate-y-0 py-10"
             : "opacity-0 -translate-y-full pointer-events-none"
