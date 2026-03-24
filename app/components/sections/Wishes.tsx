@@ -4,14 +4,14 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 type WishesProps = {
-  onShowAll: () => void;
+    onShowAll: () => void;
 };
 
 const Wishes = ({ onShowAll }: WishesProps) => {
     const [name, setName] = useState("");
     const [message, setMessage] = useState("");
     const [showNotif, setShowNotif] = useState(false)
-    
+
 
     const handleSubmit = () => {
         if (!name || !message) return;
@@ -31,11 +31,11 @@ const Wishes = ({ onShowAll }: WishesProps) => {
             <div className="max-w-7xl mx-auto px-4">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
 
-                    <motion.div  initial={{ opacity: 0, x: -40 }} 
-                       whileInView={{ opacity: 1, x: 0 }}
-                       transition={{ duration: 1.2, ease: [0.25, 1, 0.5, 1] }}
-                       viewport={{ once: true }} 
-                       className="flex flex-col gap-6">
+                    <motion.div initial={{ opacity: 0, x: -40 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 1.2, ease: [0.25, 1, 0.5, 1] }}
+                        viewport={{ once: true }}
+                        className="flex flex-col gap-6">
                         <h2 className="text-[#F4ECA3] font-barlow font-bold text-[40px] md:text-[70px] lg:text-[90px] leading-[100%] uppercase">
                             DOA DAN <span className="lg:block">HARAPAN UNTUK </span>
                             <span className="md:block">KITA SEMUA</span>
@@ -64,11 +64,11 @@ const Wishes = ({ onShowAll }: WishesProps) => {
                     </motion.div>
 
                     <motion.div
-                       initial={{ opacity: 0, x: 40 }}
-                       whileInView={{ opacity: 1, x: 0 }}
-                       transition={{ duration: 1.2, ease: [0.25, 1, 0.5, 1] }}
-                       viewport={{ once: true }} 
-                       className="flex flex-col justify-between h-full">
+                        initial={{ opacity: 0, x: 40 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 1.2, ease: [0.25, 1, 0.5, 1] }}
+                        viewport={{ once: true }}
+                        className="flex flex-col justify-between h-full">
 
                         <div className="flex flex-col gap-4 max-h-[300px] lg:max-h-none overflow-y-auto">
 
@@ -126,7 +126,7 @@ const Wishes = ({ onShowAll }: WishesProps) => {
 
                 </div>
 
-                <motion.div 
+                <motion.div
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1.2, ease: [0.25, 1, 0.5, 1] }}

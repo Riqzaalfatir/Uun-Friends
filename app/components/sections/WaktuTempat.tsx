@@ -59,7 +59,7 @@ const WaktuTempat = () => {
         className="max-w-7xl mx-auto px-4"
       >
         <div className="grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-5 md:gap-8 lg:gap-10">
-          
+
           <motion.div variants={fadeLeft}>
             <h2 className="text-[#EB621F] font-barlow font-bold text-[40px] leading-[100%] sm:text-[52px] md:text-[60px] lg:text-[80px] uppercase">
               JANJIAN <span className="inline md:block">TANGGAL &</span> <span className="md:block">TEMPATNYA</span>

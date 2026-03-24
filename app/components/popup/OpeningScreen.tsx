@@ -65,52 +65,47 @@ export default function OpeningScreen({ onOpen }: Props) {
 
                 <Image src="/image/mentahan/MentahanBakso.png" alt="bakso" width={280} height={355} className="absolute top-[161%] md:top-[108%] lg:top-[60%] right-[19%] md:left-[24%] lg:left-[12.1%] z-40 scale-[0.75] md:scale-100" />
 
+
+             {/* MENTAHAN MUKA KANG BASO DESKTOP */}
                 <motion.div
-                    animate={{
-                        x: [0, 2, -2, 0],
-                        rotate: [0, 1, -1, 0],
-                    }}
+                    animate={{ rotate: -8 }}
                     transition={{
-                        duration: 2.5,
+                        duration: 1.8,
                         repeat: Infinity,
+                        repeatType: "mirror",
                         ease: "easeInOut",
                     }}
-                    style={{ transformOrigin: "center bottom" }}
-                    className="absolute top-[55%] md:top-[41%] lg:top-[58.7%] right-[57.5%] md:left-[13%] lg:left-[36.6%] z-40 w-[40px] md:w-[120px] lg:w-[140px] h-auto"
+                    className="absolute top-[55%] md:top-[41%] lg:top-[58.7%] right-[57.5%] md:left-[13%] lg:left-[36.7%] z-40 w-[40px] md:w-[120px] lg:w-[140px] h-auto"
                 >
-                    <Image src="/image/mentahan/MentahanKangBakso.svg" alt="bakso" width={52} height={355} />
+                    <Image src="/image/mentahan/MentahanKangBakso.svg" alt="kang bakso" width={52} height={355} />
                 </motion.div>
 
+             {/* MENTAHAN MUKA CEWE DESKTOP */}
                 <motion.div
-                    animate={{
-                        x: [0, 2, -2, 0],
-                        rotate: [0, 1, -1, 0],
-                    }}
+                    animate={{ rotate: -8 }}
                     transition={{
-                        duration: 2.5,
+                        duration: 2,
                         repeat: Infinity,
+                        repeatType: "mirror",
                         ease: "easeInOut",
                     }}
-                    style={{ transformOrigin: "center bottom" }}
-                    className="absolute top-[55%] md:top-[41%] lg:top-[31%] right-[57.5%] md:left-[13%] lg:left-[36.3%] z-20 w-[40px] md:w-[120px]  h-auto"
+                    className="absolute top-[55%] md:top-[41%] lg:top-[32%] right-[57.5%] md:left-[13%] lg:left-[36.8%] z-20 w-[40px] md:w-[120px]  h-auto"
                 >
-                    <Image src="/image/mentahan/Muka-Cewe.svg" alt="bakso" width={75} height={355} />
+                    <Image src="/image/mentahan/Muka-Cewe.svg" alt="Muka Cewe" width={70} height={355} />
                 </motion.div>
 
+             {/* MENTAHAN MUKA Cowo DESKTOP */}
                 <motion.div
-                    animate={{
-                        x: [0, 2, -2, 0],
-                        rotate: [0, 1, -1, 0],
-                    }}
+                    animate={{ rotate: 8 }}
                     transition={{
-                        duration: 2.5,
+                        duration: 3,
                         repeat: Infinity,
+                        repeatType: "mirror",
                         ease: "easeInOut",
                     }}
-                    style={{ transformOrigin: "center bottom" }}
-                    className="absolute top-[55%] md:top-[41%] lg:top-[31%] right-[57.5%] md:left-[13%] lg:left-[58.1%] z-20 w-[40px] md:w-[100px] h-auto"
+                    className="absolute top-[55%] md:top-[41%] lg:top-[32.5%] right-[57.5%] md:left-[13%] lg:left-[58.5%] z-20 w-[40px] md:w-[100px] h-auto"
                 >
-                    <Image src="/image/mentahan/Muka-Cowo.svg" alt="bakso" width={53} height={355} />
+                    <Image src="/image/mentahan/Muka-Cowo.svg" alt="Muka Cowo" width={48} height={355} />
                 </motion.div>
 
                 <img src="/image/mentahan/asap.gif" alt="animasi" className="absolute w-[50px] h-auto top-[55%] md:top-[41%] lg:top-[65.5%] right-[57.5%] md:left-[13%] lg:left-[28.3%] z-50 opacity-50" />
@@ -128,6 +123,9 @@ export default function OpeningScreen({ onOpen }: Props) {
                     Buka Undangan
                 </motion.button>
             </div>
+
+
+
 
             {/* MOBILE  & TABLET*/}
             <div className="flex lg:hidden items-center justify-center w-full h-full px-4">
@@ -161,18 +159,17 @@ export default function OpeningScreen({ onOpen }: Props) {
                     <Image src="/image/hero/WARUNG KANAN.png" alt="warung" width={220} height={342} className="absolute top-[37%] md:top-[28%] left-[91%] md:left-[74%] -translate-x-1/2" />
                     <Image src="/image/mentahan/MentahanBakso.png" alt="bakso" width={170} height={355} className="absolute top-[50%] md:top-[38%] left-[36%] md:left-[40%] z-40 -translate-x-1/2" />
 
+
+             {/* MENTAHAN MUKA KANG BASO MOBILE & TABLET */}
                     <motion.div
-                        animate={{
-                            x: [0, 2, -2, 0],
-                            rotate: [0, 1, -1, 0],
-                        }}
+                        animate={{ rotate: -8 }}
                         transition={{
-                            duration: 2.5,
+                            duration: 1.8,
                             repeat: Infinity,
+                            repeatType: "mirror",
                             ease: "easeInOut",
                         }}
-                        style={{ transformOrigin: "center bottom" }}
-                        className="absolute top-[48.3%] md:top-[37%] lg:top-[58%] right-[58%] md:left-[37.8%] lg:left-[36.5%] z-40 w-[36px] md:w-[36px] lg:w-[120px] h-auto"
+                        className="absolute top-[48.3%] md:top-[37%] lg:top-[58%] right-[58%] md:left-[37.8%] lg:left-[36.5%] z-40 w-[35px] md:w-[36px] lg:w-[120px] h-auto"
                     >
                         <Image
                             src="/image/mentahan/MentahanKangBakso.svg"
@@ -182,18 +179,16 @@ export default function OpeningScreen({ onOpen }: Props) {
                         />
                     </motion.div>
 
+            {/* MENTAHAN MUKA CEWE MOBILE & TABLET */}
                     <motion.div
-                        animate={{
-                            x: [0, 2, -2, 0],
-                            rotate: [0, 1, -1, 0],
-                        }}
+                        animate={{ rotate: -8 }}
                         transition={{
-                            duration: 2.5,
+                            duration: 2,
                             repeat: Infinity,
+                            repeatType: "mirror",
                             ease: "easeInOut",
                         }}
-                        style={{ transformOrigin: "center bottom" }}
-                        className="absolute top-[30.9%] md:top-[24%] lg:top-[32%] right-[48.2%] md:left-[41%] lg:left-[37.1%] z-20 w-[55px] md:w-[55px]  h-auto"
+                        className="absolute top-[32%] md:top-[24.5%] lg:top-[32%] right-[48.5%] md:left-[41.5%] lg:left-[37.1%] z-20 w-[50px] md:w-[50px]  h-auto"
                     >
                         <Image
                             src="/image/mentahan/Muka-Cewe.svg"
@@ -203,18 +198,16 @@ export default function OpeningScreen({ onOpen }: Props) {
                         />
                     </motion.div>
 
+            {/* MENTAHAN MUKA COWO MOBILE & TABLET */}
                     <motion.div
-                        animate={{
-                            x: [0, 2, -2, 0],
-                            rotate: [0, 1, -1, 0],
-                        }}
+                        animate={{ rotate: 6 }}
                         transition={{
-                            duration: 2.5,
+                            duration: 2,
                             repeat: Infinity,
+                            repeatType: "mirror",
                             ease: "easeInOut",
                         }}
-                        style={{ transformOrigin: "center bottom" }}
-                        className="absolute top-[31%] md:top-[24.5%] lg:top-[29.5%] right-[34%] md:left-[52%] lg:left-[55.3%] z-20 w-[38px] md:w-[38px] lg:w-[120px] h-auto"
+                        className="absolute top-[32.9%] md:top-[24.5%] lg:top-[29.5%] right-[34.5%] md:left-[52%] lg:left-[55.3%] z-20 w-[32px] md:w-[35px] lg:w-[120px] h-auto"
                     >
                         <Image
                             src="/image/mentahan/Muka-Cowo.svg"

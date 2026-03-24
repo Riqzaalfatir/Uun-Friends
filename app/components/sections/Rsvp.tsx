@@ -135,7 +135,7 @@ Mohon maaf dan terima kasih atas undangannya.`;
                             </motion.button>
 
                             <motion.button
-                                onClick={() => setIsTidak(true)} 
+                                onClick={() => setIsTidak(true)}
 
                                 whileHover={{ scale: 1.03 }}
                                 whileTap={{ scale: 0.97 }}
@@ -165,18 +165,7 @@ Mohon maaf dan terima kasih atas undangannya.`;
                                             <select
                                                 value={count}
                                                 onChange={(e) => setCount(Number(e.target.value))}
-                                                className="
-            w-full h-[50px]
-            px-4 pr-10
-            rounded-xl
-            bg-white
-            text-gray-800
-            text-[16px]
-            font-medium
-            outline-none
-            appearance-none
-            cursor-pointer
-        "
+                                                className="w-full h-[50px] px-4 pr-10 rounded-xl bg-white text-gray-800 text-[16px] font-medium outline-none appearance-none cursor-pointer"
                                             >
                                                 {[1, 2, 3, 4, 5, 6].map((num) => (
                                                     <option key={num} value={num}>
@@ -210,7 +199,7 @@ Mohon maaf dan terima kasih atas undangannya.`;
                                         YA
                                     </motion.a>
                                 </motion.div>
-                                
+
                                 <motion.div variants={fadeUp} className="flex flex-col items-center justify-between gap-2 mt-4">
                                     <p className=" text-[13px]  md:text-[15px] font-source text-black uppercase">
                                         Jika ada kendala pada RSVP, silakan hubungi Tim Provite.

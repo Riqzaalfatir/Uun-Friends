@@ -42,7 +42,7 @@ const lineAnim: Variants = {
 const Video = () => {
   return (
     <section id="video" className="relative bg-[#EB621F] w-full px-6 py-10 flex items-center justify-center overflow-hidden">
-      
+
       <div className="absolute top-[128px] left-0 w-full flex flex-col gap-[40px] pointer-events-none">
         {[...Array(3)].map((_, i) => (
           <motion.div
@@ -74,7 +74,7 @@ const Video = () => {
       </div>
 
       <div className="relative z-10 flex justify-center items-center">
-        
+
         <div className="relative z-10 flex justify-center items-center">
           <motion.div
             variants={fadeZoom}

@@ -124,60 +124,56 @@ const Hero = () => {
                         className="absolute top-[53%] md:top-[41%] lg:top-[70%] right-[27%] md:left-[13%] lg:left-[12.1%] z-40 scale-[0.75] md:scale-100"
                     />
 
+
+                    {/* MENTAHAN MUKA KANG BAKSO */}
                     <motion.div
-                        animate={{
-                            x: [0, 2, -2, 0],
-                            rotate: [0, 1, -1, 0],
-                        }}
+                        animate={{ rotate: -8 }}
                         transition={{
-                            duration: 2.5,
+                            duration: 1.8,
                             repeat: Infinity,
+                            repeatType: "mirror",
                             ease: "easeInOut",
                         }}
-                        style={{ transformOrigin: "center bottom" }}
-                        className="absolute top-[54.5%] md:top-[39.3%] lg:top-[68.5%] right-[57%] md:left-[33.5%] lg:left-[36.4%] z-40 w-[40px] md:w-[145px] lg:w-[140px] h-auto"
+                        className="absolute top-[54.5%] md:top-[39.3%] lg:top-[68.5%] right-[58.1%] md:left-[32.9%] lg:left-[36.4%] z-40 w-[40px] md:w-[145px] lg:w-[140px] h-auto"
                     >
                         <Image
                             src="/image/mentahan/MentahanKangBakso.svg"
-                            alt="bakso"
+                            alt="Kang bakso"
                             width={53.5}
                             height={355}
                         />
                     </motion.div>
 
+                    {/* MENTAHAN MUKA CEWE */}
                     <motion.div
-                        animate={{
-                            x: [0, 2.5, -2.5, 0],
-                            rotate: [0, 2, -2, 0],
-                        }}
+                        animate={{ rotate: -8 }}
                         transition={{
-                            duration: 2.5,
+                            duration: 2,
                             repeat: Infinity,
+                            repeatType: "mirror",
                             ease: "easeInOut",
                         }}
-                        style={{ transformOrigin: "center bottom" }}
                         className="absolute top-[31%] md:top-[17%] lg:top-[40.5%] right-[51%] md:left-[37.8%] lg:left-[37.7%] z-20 w-[53px] md:w-[120px] lg:w-[120px] h-auto"
                     >
-                        <Image src="/image/mentahan/Muka-Cewe.svg" alt="bakso" width={78} height={355} />
+                        <Image src="/image/mentahan/Muka-Cewe.svg" alt="Muka Cewe" width={78} height={355} />
                     </motion.div>
 
+                    {/* MENTAHAN MUKA COWO */}
+
                     <motion.div
-                        animate={{
-                            x: [0, 2, -2, 0],
-                            rotate: [0, 1, -1, 0],
-                        }}
+                        animate={{ rotate: 6 }}
                         transition={{
-                            duration: 2.5,
+                            duration: 2,
                             repeat: Infinity,
+                            repeatType: "mirror",
                             ease: "easeInOut",
                         }}
-                        style={{ transformOrigin: "center bottom" }}
                         className="absolute top-[32.3%] md:top-[17.5%] lg:top-[41%] right-[35.5%] md:left-[56.4%] lg:left-[57.6%] z-20 w-[35px] md:w-[120px] h-auto">
-                        <Image src="/image/mentahan/Muka-Cowo.svg" alt="bakso" width={55} height={355} />
+                        <Image src="/image/mentahan/Muka-Cowo.svg" alt="Muka Cowo" width={55} height={355} />
                     </motion.div>
 
                     <img src="/image/mentahan/asap.gif" alt="animasi"
-                        className="absolute w-[50px] h-auto top-[60%] md:top-[45.5%] lg:top-[75.5%] right-[64.5%] md:left-[26.5%] lg:left-[28.3%] z-50 opacity-50"
+                        className="absolute w-[50px] h-auto top-[60%] md:top-[45.5%] lg:top-[75.5%] right-[64.5%] md:left-[26.5%] lg:left-[28.3%] z-30"
                     />
 
 

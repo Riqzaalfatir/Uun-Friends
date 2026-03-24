@@ -128,7 +128,7 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
               alt="cewek"
               width={65}
               height={114}
-              className="absolute top-[30%] md:top-[15%] lg:top-[40%] left-[34%] md:left-[40%] lg:left-[41%] z-10 scale-[0.5] md:scale-100"
+              className="absolute top-[32%] md:top-[15%] lg:top-[40%] left-[34%] md:left-[40%] lg:left-[41%] z-10 scale-[0.5] md:scale-100"
             />
 
             <Image
@@ -136,7 +136,7 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
               alt="cowok"
               width={65}
               height={114}
-              className="absolute top-[29%] md:top-[14%] lg:top-[39%] right-[33%] md:right-[38%] lg:right-[37.7%] z-10 scale-[0.6] md:scale-100"
+              className="absolute top-[31%] md:top-[14%] lg:top-[39%] right-[33%] md:right-[38%] lg:right-[37.7%] z-10 scale-[0.6] md:scale-100"
             />
 
             <Image
@@ -147,19 +147,16 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
               className="absolute top-[53%] md:top-[34%] lg:top-[57%] right-[27%] md:left-[18%] lg:left-[19.1%] z-40 scale-[0.75] md:scale-100"
             />
 
-            {/* MENTAHAN ORANG */}
+            {/* MENTAHAN MUKA KANG BASO */}
             <motion.div
-              animate={{
-                x: [0, 2, -2, 0],
-                rotate: [0, 1, -1, 0],
-              }}
+              animate={{ rotate: -8 }}
               transition={{
-                duration: 2.5,
+                duration: 1.8,
                 repeat: Infinity,
+                repeatType: "mirror",
                 ease: "easeInOut",
               }}
-              style={{ transformOrigin: "center bottom" }}
-              className="absolute top-[54.5%] md:top-[33%] lg:top-[55.5%] right-[56.5%] md:left-[35.4%] lg:left-[36.3%] z-40 w-[42px] md:w-[120px] lg:w-[140px] h-auto"
+              className="absolute top-[54.5%] md:top-[33%] lg:top-[55.5%] right-[57.5%] md:left-[35.4%] lg:left-[36.3%] z-40 w-[42px] md:w-[120px] lg:w-[140px] h-auto"
             >
               <Image
                 src="/image/mentahan/MentahanKangBakso.svg"
@@ -169,19 +166,16 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
               />
             </motion.div>
 
-            {/* MENTAHAN ORANG CEWE */}
+            {/* MENTAHAN MUKA CEWE */}
             <motion.div
-              animate={{
-                x: [0, 2.5, -2.5, 0],
-                rotate: [0, 2, -2, 0],
-              }}
+              animate={{ rotate: -8 }}
               transition={{
-                duration: 2.5,
+                duration: 2,
                 repeat: Infinity,
+                repeatType: "mirror",
                 ease: "easeInOut",
               }}
-              style={{ transformOrigin: "center bottom" }}
-              className="absolute top-[30.5%] md:top-[10%] lg:top-[35%] right-[51.8%] md:left-[38.2%] lg:left-[39.2%] z-20 w-[48px] md:w-[120px] lg:w-[145px] h-auto"
+              className="absolute top-[32.5%] md:top-[10%] lg:top-[35%] right-[51.8%] md:left-[38.2%] lg:left-[39.2%] z-20 w-[48px] md:w-[120px] lg:w-[145px] h-auto"
             >
               <Image
                 src="/image/mentahan/Muka-Cewe.svg"
@@ -191,19 +185,16 @@ const AllWishes = ({ onClose }: AllWishesProps) => {
               />
             </motion.div>
 
-            {/* MENTAHAN ORANG COWO */}
+            {/* MENTAHAN MUKA COWO */}
             <motion.div
-              animate={{
-                x: [0, 2, -2, 0],
-                rotate: [0, 1, -1, 0],
-              }}
+              animate={{ rotate: 6 }}
               transition={{
-                duration: 2.5,
+                duration: 2,
                 repeat: Infinity,
+                repeatType: "mirror",
                 ease: "easeInOut",
               }}
-              style={{ transformOrigin: "center bottom" }}
-              className="absolute top-[29.5%] md:top-[10.5%] lg:top-[35%] right-[36.7%] md:left-[53%] lg:left-[53.4%] z-20 w-[37px] md:w-[100px] h-auto"
+              className="absolute top-[30.5%] md:top-[10.5%] lg:top-[35%] right-[36.7%] md:left-[53%] lg:left-[53.4%] z-20 w-[37px] md:w-[100px] h-auto"
             >
               <Image
                 src="/image/mentahan/Muka-Cowo.svg"
